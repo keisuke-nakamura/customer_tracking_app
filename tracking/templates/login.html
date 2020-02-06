@@ -9,8 +9,8 @@
     <!-- Default form login -->
 
     <section>
-        <form class="text-center" action="#!">
-
+        <form class="text-center" action="#!" method="post">
+            {% csrf_token %}
             <p class="h4 mb-4">Sign in</p>
 
             <!-- Email -->
