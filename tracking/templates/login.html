@@ -1,0 +1,63 @@
+{% extends "default.html" %}
+{% block body %}
+    <div style="height: 20vh">
+        <div class="flex-center flex-column">
+            <h1 class="animated fadeIn mb-4">Customer Tracking App <i class="fa fa-android green-text"></i></h1>
+            <h5>welcome! this is mock app <i class="fa fa-apple red-text"></i></h5>
+        </div>
+    </div>
+    <!-- Default form login -->
+
+    <section>
+        <form class="text-center" action="#!">
+
+            <p class="h4 mb-4">Sign in</p>
+
+            <!-- Email -->
+            <div class="row d-flex justify-content-center">
+                <div class="form-group w-50">
+                    <input type="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="E-mail">
+
+                    <!-- Password -->
+                    <input type="password" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Password">
+                </div>
+            </div>
+
+            <div>
+                <!-- Remember me -->
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
+                    <label class="custom-control-label" for="defaultLoginFormRemember">remenber me</label>
+                </div>
+            </div>
+            <div>
+                <!-- Forgot password -->
+                <a href="">パスワードを忘れた方はこちら</a>
+            </div>
+
+            </div>
+            <!-- Sign in button -->
+            <div class="d-flex justify-content-around">
+                <div class="form-group w-50">
+                    <button class="btn btn-info btn-block my-4" type="submit">Sign in</button>
+                </div>
+            </div>
+            <!-- Register -->
+            <p>Not a member?
+                <a href="">Register</a>
+            </p>
+
+            <!-- Social login -->
+            <p>Social login</p>
+
+            <a href="#" class="mx-2" role="button"><i class="fa fa-facebook-f light-blue-text"></i></a>
+            <a href="#" class="mx-2" role="button"><i class="fa fa-twitter light-blue-text"></i></a>
+            <a href="#" class="mx-2" role="button"><i class="fa fa-github light-blue-text"></i></a>
+
+        </form>
+    </section>
+
+
+    <!-- Default form login -->
+
+{% endblock %}
