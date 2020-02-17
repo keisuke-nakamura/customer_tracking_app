@@ -2,124 +2,54 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6dd0b3b2-4a6f-4a3b-9282-1b24fb886ef3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/customer_tracking_app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/customer_tracking_app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/CODE_OF_CONDUCT.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/CONTRIBUTING.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/ISSUE_TEMPLATE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/License.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/README.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/css/addons/datatables.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/css/addons/datatables.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/css/mdb.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/css/mdb.lite.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/css/mdb.lite.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/css/mdb.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/css/modules/animations-extended.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/css/modules/animations-extended.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/css/style.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/font/roboto/Roboto-Bold.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/font/roboto/Roboto-Bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/font/roboto/Roboto-Bold.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/font/roboto/Roboto-Bold.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/font/roboto/Roboto-Light.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/font/roboto/Roboto-Light.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/font/roboto/Roboto-Light.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/font/roboto/Roboto-Light.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/font/roboto/Roboto-Medium.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/font/roboto/Roboto-Medium.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/font/roboto/Roboto-Medium.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/font/roboto/Roboto-Medium.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/font/roboto/Roboto-Regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/font/roboto/Roboto-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/font/roboto/Roboto-Regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/font/roboto/Roboto-Regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/font/roboto/Roboto-Thin.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/font/roboto/Roboto-Thin.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/font/roboto/Roboto-Thin.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/font/roboto/Roboto-Thin.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/img/lightbox/default-skin.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/img/lightbox/default-skin.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/img/lightbox/preloader.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/img/overlays/01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/img/overlays/02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/img/overlays/03.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/img/overlays/04.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/img/overlays/05.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/img/overlays/06.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/img/overlays/07.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/img/overlays/08.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/img/overlays/09.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/img/svg/arrow_left.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/img/svg/arrow_right.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/js/addons/datatables.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/js/addons/datatables.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/js/jquery-3.3.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/js/mdb.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/js/mdb.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/js/modules/chart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/js/modules/default-file-input.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/js/modules/enhanced-modals.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/js/modules/forms-free.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/js/modules/jquery.easing.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/js/modules/scrolling-navbar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/js/modules/velocity.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/js/modules/velocity.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/js/modules/waves.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/js/modules/wow.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/js/popper.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/license.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/scss/_custom-skin.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/scss/_custom-styles.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/scss/_custom-variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/scss/addons/_datatables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/scss/core/_colors.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/scss/core/_global.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/scss/core/_helpers.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/scss/core/_masks.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/scss/core/_mixins.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/scss/core/_typography.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/scss/core/_variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/scss/core/_waves.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/scss/core/bootstrap/_functions.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/scss/core/bootstrap/_variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/scss/free/_animations-basic.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/scss/free/_badges.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/scss/free/_buttons.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/scss/free/_cards.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/scss/free/_carousels.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/scss/free/_depreciated.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/scss/free/_dropdowns.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/scss/free/_footers.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/scss/free/_forms.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/scss/free/_input-group.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/scss/free/_list-group.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/scss/free/_loader.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/scss/free/_modals.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/scss/free/_msc.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/scss/free/_navbars.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/scss/free/_pagination.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/scss/free/_steppers.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/scss/free/_switch.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/scss/free/_tables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/scss/free/modules/animations-extended/_module.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/scss/free/modules/animations-extended/animations-extended.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/scss/mdb.lite.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/scss/mdb.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/mdb/scss/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/assets/fonts/Pe-icon-7-stroke.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/assets/fonts/Pe-icon-7-stroke.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/assets/fonts/Pe-icon-7-stroke.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/assets/fonts/Pe-icon-7-stroke.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/assets/fonts/fa-solid-900.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/assets/fonts/fa-solid-900.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/assets/fonts/fa-solid-900.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/assets/fonts/fa-solid-900.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/assets/fonts/fa-solid-900.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/assets/images/city1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/assets/images/city2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/assets/images/city3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/assets/scripts/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/charts-chartjs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/components-accordions.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/components-calendar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/components-carousel.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/components-maps.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/components-modals.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/components-notifications.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/components-pagination.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/components-progress-bar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/components-scrollable-elements.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/components-tabs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/components-tooltips-popovers.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/dashboard-boxes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/elements-badges-labels.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/elements-buttons-standard.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/elements-cards.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/elements-dropdowns.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/elements-icons.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/elements-list-group.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/elements-navigation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/elements-utilities.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/forms-controls.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/forms-layouts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/forms-validation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/tables-regular.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tracking/templates/default.html" beforeDir="false" afterPath="$PROJECT_DIR$/tracking/templates/default.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tracking/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/tracking/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/tracking/templates/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tracking/templates/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tracking/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/tracking/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tracking/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/tracking/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,9 +107,9 @@
         <env name="PYTHONUNBUFFERED" value="1" />
         <env name="DJANGO_SETTINGS_MODULE" value="customer_tracking_app.settings" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\Ram\AppData\Local\Programs\Python\Python37\python.exe" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="launchJavascriptDebuger" value="false" />
@@ -220,6 +150,7 @@
       <workItem from="1581001050910" duration="1235000" />
       <workItem from="1581394959973" duration="7909000" />
       <workItem from="1581412973750" duration="9757000" />
+      <workItem from="1581927945288" duration="154000" />
     </task>
     <servers />
   </component>
@@ -231,10 +162,15 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1581425651975" />
-    <state x="698" y="128" key="#customer_tracking_app" timestamp="1581001116384">
+    <state x="698" y="128" key="#customer_tracking_app" timestamp="1581928100340">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="698" y="128" key="#customer_tracking_app/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1581928100340" />
     <state x="698" y="128" key="#customer_tracking_app/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1581001116384" />
+    <state x="694" y="271" key="EnvironmentVariablesDialog" timestamp="1581928094544">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="694" y="271" key="EnvironmentVariablesDialog/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1581928094544" />
     <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1581403461671">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -260,13 +196,15 @@
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1580979292622" />
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1581425671591" />
-    <state x="468" y="163" key="SettingsEditor" timestamp="1581001545213">
+    <state x="468" y="163" key="SettingsEditor" timestamp="1581928065057">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="468" y="163" key="SettingsEditor/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1581928065057" />
     <state x="468" y="163" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1581001545213" />
-    <state x="634" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1581412975036">
+    <state x="634" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1581927946757">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="634" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1581927946757" />
     <state x="634" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1581412975036" />
   </component>
 </project>
