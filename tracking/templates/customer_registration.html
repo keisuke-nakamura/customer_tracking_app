@@ -1,0 +1,146 @@
+{% extends "default.html" %}
+{% block body %}
+    {% load static %}
+
+    <div class="sidemenu">
+        <div class="sidemenu-inner scroll">
+            <div class="admin">
+                <img src="{% static 'delight/images/homes-chan-151-159.png' %}" alt="" />
+                <div class="admin-detail">
+                    <h6>ホームズちゃん</h6>
+                    <a class="dropdown-button" href='#' title="" data-activates='dropdown2'><span class="green"></span> Online <i class="ti-angle-down"></i></a>
+                    <ul id='dropdown2' class='dropdown-content'>
+                        <li><a href="#!">Offline</a></li>
+                        <li><a href="#!">Busy</a></li>
+                        <li><a href="#!">Away</a></li>
+                        <li class="divider"></li>
+                        <li><a href="login.html">Signout</a></li>
+                    </ul>
+                </div>
+            </div><!-- Admin -->
+
+            <nav class="admin-nav">
+                <h6>メニュー</h6>
+                <ul>
+                    <li><a class="waves-effect" href="{% url 'index' %}" title=""><i class="ti-home red lighten-1"></i> 見込客一覧</a>
+                    </li>
+                    <li><a class="waves-effect" href="#" title=""><i class="ti-widgetized pink lighten-3"></i> 見込登録</a>
+                    </li>
+                    <li><a class="waves-effect" href="{% url 'unassigned' %}" title=""><i class="ti-widgetized blue lighten-3"></i> 未割当一覧</a>
+
+                    </li>
+                    <li><a class="waves-effect" href="#" title=""><i class="ti-email green lighten-3"></i> 担当者変更</a>
+                        <ul>
+                            <li><a href="mail.html" title="">Inbox</a></li>
+                            <li><a href="mail-open.html" title="">Mail Open</a></li>
+                            <li><a href="compose.html" title="">Compose Mail</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="waves-effect" href="{% url 'login' %}" title=""><i class="ti-key blue-grey lighten-2"></i> ログアウト</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div><!-- Sidemenu -->
+
+    <div class="content-area">
+        <div class="breadcrumb-bar">
+            <div class="page-title">
+                <h1>見込客登録</h1>
+                <span>Potential Customer Registration</span>
+            </div>
+
+            <form class="search-admin waves-effect">
+                <input type="text" placeholder="Enter Keyword To Search..." />
+                <button><i class="ti-search"></i></button>
+            </form>
+
+            <ul class="admin-breadcrumb">
+                <li><a href="#" title="">Dashboard</a></li>
+                <li><a href="#" title="">Pages</a></li>
+                <li>Steps Form</li>
+            </ul>
+        </div><!-- Breadcrumb Bar -->
+
+        <div class="widgets-wrapper">
+            <div class="row">
+                <div class="masonary">
+
+                    <div class="col s12">
+                        <div class="widget z-depth-1">
+                            <div class="loader"></div>
+                            <div class="widget-title">
+                                <h3>Steps Form</h3>
+                                <p>Completely Functional Steps Form</p>
+                                <a class="options dropdown-button waves-effect" href="#" title="" data-activates='dropdown3'><i class="ti-more-alt"></i></a>
+                                <ul id='dropdown3' class='dropdown-content'>
+                                    <li><a class="rld" href="#!" title="">Reload</a></li>
+                                    <li><a class="fl-scr" href="#!" title="">Full Screen</a></li>
+                                    <li><a class="rmv" href="#!" title="">Remove</a></li>
+                                </ul>
+                            </div>
+
+                            <form id="example-form" action="#">
+                                <div>
+                                    <h3>Profile</h3>
+                                    <section>
+                                        <div class="input-field">
+                                            <label for="userName">顧客名 *</label>
+                                            <input id="userName" name="userName" type="text" class="required">
+                                        </div>
+                                        <div class="input-field">
+                                            <label for="password">ふりがな *</label>
+                                            <input id="password" name="password" type="email" class="required">
+                                        </div>
+                                        <div class="input-field">
+                                            <label for="confirm">メールアドレス *</label>
+                                            <input id="confirm" name="confirm" type="text" class="required">
+                                        </div>
+                                        <p>(*) Mandatory</p>
+                                    </section>
+                                    <h3>住所</h3>
+                                    <section>
+
+                                        <div class="input-field">
+                                            <label for="surname">都道府県 *</label>
+                                            <input id="surname" name="surname" type="text" class="required">
+                                        </div>
+                                        <div class="input-field">
+                                            <label for="address">市町村</label>
+                                            <input id="address" name="address" type="text">
+                                        </div>
+                                        <div class="input-field">
+                                            <label for="email">郵便番号 *</label>
+                                            <input id="email" name="text" type="text" class="required email">
+                                        </div>
+
+                                        <p>(*) Mandatory</p>
+                                    </section>
+                                    <h3>物件情報その他</h3>
+                                    <section>
+                                        <div class="input-field">
+                                            <label for="name">建物名 *</label>
+                                            <input id="name" name="name" type="text" class="required">
+                                        </div>
+                                        <div class="input-field">
+                                            <label for="name">反響元 *</label>
+                                            <input id="name" name="name" type="text" class="required">
+                                        </div>
+                                        <div class="input-field">
+                                            <label for="name">媒体 *</label>
+                                            <input id="name" name="name" type="text" class="required">
+                                        </div>
+                                    </section>
+
+                                </div>
+                            </form>
+                        </div><!-- Widget -->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div><!-- Content Area -->
+
+{% endblock %}

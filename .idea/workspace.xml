@@ -2,52 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6dd0b3b2-4a6f-4a3b-9282-1b24fb886ef3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/customer_tracking_app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/customer_tracking_app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tracking/static/delight/images/breadcrumb.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tracking/static/delight/images/homes-chan-151-159.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tracking/static/delight/js/step-form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tracking/templates/customer_registration.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tracking/templates/how_to_use.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tracking/templates/tour.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tracking/templates/unassigned.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/assets/fonts/Pe-icon-7-stroke.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/assets/fonts/Pe-icon-7-stroke.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/assets/fonts/Pe-icon-7-stroke.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/assets/fonts/Pe-icon-7-stroke.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/assets/fonts/fa-solid-900.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/assets/fonts/fa-solid-900.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/assets/fonts/fa-solid-900.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/assets/fonts/fa-solid-900.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/assets/fonts/fa-solid-900.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/assets/images/city1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/assets/images/city2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/assets/images/city3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/assets/scripts/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/charts-chartjs.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/components-accordions.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/components-calendar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/components-carousel.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/components-maps.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/components-modals.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/components-notifications.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/components-pagination.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/components-progress-bar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/components-scrollable-elements.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/components-tabs.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/components-tooltips-popovers.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/dashboard-boxes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/elements-badges-labels.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/elements-buttons-standard.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/elements-cards.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/elements-dropdowns.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/elements-icons.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/elements-list-group.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/elements-navigation.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/elements-utilities.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/forms-controls.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/forms-layouts.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/forms-validation.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/architectui-html-free/tables-regular.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tracking/static/delight/steps-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/tracking/static/delight/steps-form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tracking/templates/default.html" beforeDir="false" afterPath="$PROJECT_DIR$/tracking/templates/default.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tracking/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tracking/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tracking/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/tracking/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/templates/main.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tracking/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/tracking/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tracking/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/tracking/views.py" afterDir="false" />
     </list>
@@ -63,9 +29,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
-        <option value="HTML File" />
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -73,6 +39,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1XPqhuBI66t1HgLn9ibdseS9Za9" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
@@ -81,11 +50,12 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/tracking/static/mdb/css" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../NOINOINOI/Project" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -150,12 +120,15 @@
       <workItem from="1581001050910" duration="1235000" />
       <workItem from="1581394959973" duration="7909000" />
       <workItem from="1581412973750" duration="9757000" />
-      <workItem from="1581927945288" duration="154000" />
+      <workItem from="1581927945288" duration="22306000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1581425651975">
@@ -171,40 +144,65 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="694" y="271" key="EnvironmentVariablesDialog/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1581928094544" />
-    <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1581403461671">
+    <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1581988339089">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1581988339089" />
     <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1581403461671" />
     <state x="2660" y="276" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1581001064570" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1581425671591">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1582012965807">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1580979292622" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1582012965807" />
     <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1581425671591" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1581425671591">
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1582012965807">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1580979292622" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1582012965807" />
     <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1581425671591" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1581425671591">
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1582012965807">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1580979292622" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1582012965807" />
     <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1581425671591" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1581425671591">
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1582012965807">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1580979292622" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1582012965807" />
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1581425671591" />
-    <state x="468" y="163" key="SettingsEditor" timestamp="1581928065057">
+    <state x="468" y="163" key="SettingsEditor" timestamp="1581994093376">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="468" y="163" key="SettingsEditor/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1581928065057" />
+    <state x="468" y="163" key="SettingsEditor/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1581994093376" />
     <state x="468" y="163" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1581001545213" />
     <state x="634" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1581927946757">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="634" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1581927946757" />
     <state x="634" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1581412975036" />
+    <state x="1920" y="225" width="1296" height="718" maximized="true" key="dock-window-1" timestamp="1582008408630">
+      <screen x="1920" y="0" width="1280" height="984" />
+    </state>
+    <state x="1920" y="225" width="1296" height="718" maximized="true" key="dock-window-1/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1582008408630" />
+    <state x="1920" y="48" width="1296" height="718" maximized="true" key="dock-window-2" timestamp="1582005545889">
+      <screen x="1920" y="0" width="1280" height="984" />
+    </state>
+    <state x="1920" y="48" width="1296" height="718" maximized="true" key="dock-window-2/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1582005545889" />
+    <state x="1920" y="155" width="1296" height="718" key="dock-window-3" timestamp="1582011698270">
+      <screen x="1920" y="0" width="1280" height="984" />
+    </state>
+    <state x="1920" y="155" width="1296" height="718" key="dock-window-3/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1582011698270" />
+    <state x="1920" y="199" width="1296" height="718" key="dock-window-4" timestamp="1582011698270">
+      <screen x="1920" y="0" width="1280" height="984" />
+    </state>
+    <state x="1920" y="199" width="1296" height="718" key="dock-window-4/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1582011698270" />
+    <state x="741" y="251" width="729" height="789" key="find.popup" timestamp="1582004222801">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="741" y="251" width="729" height="789" key="find.popup/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1582004222801" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1581929098677">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1581929098677" />
   </component>
 </project>

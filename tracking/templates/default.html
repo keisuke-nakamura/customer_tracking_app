@@ -4,7 +4,7 @@
 
     {% load static %}
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-    <title>Tracking System - Login</title>
+    <title>Tracking System</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -19,14 +19,180 @@
 
 </head>
 <body>
+<div class="loader-container circle-pulse-multiple">
+    <div class="page-loader">
+        <div id="loading-center-absolute">
+            <div class="object" id="object_four"></div>
+            <div class="object" id="object_three"></div>
+            <div class="object" id="object_two"></div>
+            <div class="object" id="object_one"></div>
+        </div>
+    </div>
+</div>
+<div class="topbar">
+    <div class="logo"><a href="#" title="">Tracking System</a></div><!-- Logo -->
+    <a class="sidemenu-btn waves-effect waves-light" href="#" title=""><i class="ti-menu"></i></a><!-- Sidemenu Button -->
+
+    <div class="dropdown">
+        <a class="dropdown-button" href='#' title="" data-activates='dropdown1'>Dropdown <i class="ti-angle-down"></i></a>
+        <ul id='dropdown1' class='dropdown-content'>
+            <li><a href="steps-form.html">Steps Form</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+            <li class="divider"></li>
+            <li><a href="form-builder.html">Form Builder</a></li>
+            <li><a href="tour.html">Page Tour</a></li>
+            <li><a href="extra-options.html">Extra Options</a></li>
+        </ul>
+    </div><!-- Dropdown -->
+
+    <div class="activity">
+        <h4 class="cd-headline clip is-full-width">
+	            <span class="cd-words-wrapper">
+	                <b class="is-visible"><span class="alert success">Success</span> Jessica Roy Has Just Accepted Your Friend Request ...</b>
+	                <b class="is-hidden"><span class="alert warning">Warning</span> Server #405 has been crashed</b>
+	                <b class="is-hidden"><span class="alert info">Info</span> Micky Merlen has sent you an email...</b>
+	                <b class="is-hidden"><span class="alert error">Error</span> Server #405 is disconnected</b>
+	            </span>
+        </h4>
+    </div><!-- Activity -->
+
+    <div class="topbar-links">
+        <div class="notification">
+            <a class="click-btn" href="#" title=""><i class="ti-bell"></i> <span>2</span></a>
+            <div class="notification-dropdown z-depth-2">
+                <div class="notification-top">
+                    <ul class="tabs">
+                        <li class="tab"><a class="active" href="#notification"><i class="ti-world"></i></a></li>
+                        <li class="tab"><a href="#task"><i class="ti-view-list-alt"></i></a></li>
+                        <li class="tab"><a href="#event"><i class="ti-calendar"></i></a></li>
+                    </ul>
+                </div>
+                <div class="notification-bottom">
+                    <div id="notification">
+                        <h5>You Have 10 New Notifications</h5>
+                        <div class="notification-inner scroll">
+                            <div class="notification-box">
+                                <img src="http://placehold.it/48x47" alt="" />
+                                <div class="notification-detail">
+                                    <h6 class="blue-text"><a href="mail-open.html" title="">Clarine Wassel</a></h6>
+                                    <span>20 mins ago</span>
+                                    <p><a href="mail-open.html" title="">Do you want to grab some...</a></p>
+                                </div>
+                            </div><!-- Notification Box -->
+                            <div class="notification-box">
+                                <img src="http://placehold.it/48x47" alt="" />
+                                <div class="notification-detail">
+                                    <h6 class="orange-text"><a href="mail-open.html" title="">Todd Cok</a></h6>
+                                    <span>45 mins ago</span>
+                                    <p><a href="mail-open.html" title="">Let’s Schedule a Meeting ..</a></p>
+                                </div>
+                            </div><!-- Notification Box -->
+                            <div class="notification-box">
+                                <img src="http://placehold.it/48x47" alt="" />
+                                <div class="notification-detail">
+                                    <h6 class="cyan-text"><a href="mail-open.html" title="">Jeniffer Ross</a></h6>
+                                    <span>20 mins ago</span>
+                                    <p><a href="mail-open.html" title="">We Are looking to hire ....</a></p>
+                                </div>
+                            </div><!-- Notification Box -->
+                            <div class="notification-box">
+                                <img src="http://placehold.it/48x47" alt="" />
+                                <div class="notification-detail">
+                                    <h6 class="green-text"><a href="mail-open.html" title="">Clarine Wassel</a></h6>
+                                    <span>20 mins ago</span>
+                                    <p><a href="mail-open.html" title="">Do you want to grab some</a></p>
+                                </div>
+                            </div><!-- Notification Box -->
+                        </div>
+                    </div><!-- Notifications -->
+
+                    <div id="task">
+                        <h5>You Have 5 Tasks Pending</h5>
+                        <div class="task-inner scroll">
+                            <div class="admin-task">
+                                <h6>HTML5 Validation Report</h6>
+                                <div class="progress"><div class="determinate purple lighten-3" style="width: 70%"></div></div>
+                            </div><!-- Admin Task -->
+                            <div class="admin-task">
+                                <h6>Google Chrome Extentions</h6>
+                                <div class="progress"><div class="determinate green" style="width: 45%"></div></div>
+                            </div><!-- Admin Task -->
+                            <div class="admin-task">
+                                <h6>Social Intranet Projects</h6>
+                                <div class="progress"><div class="determinate red" style="width:86%"></div></div>
+                            </div><!-- Admin Task -->
+                            <div class="admin-task">
+                                <h6>Social Intranet Projects</h6>
+                                <div class="progress"><div class="determinate blue" style="width: 63%"></div></div>
+                            </div><!-- Admin Task -->
+                            <div class="admin-task">
+                                <h6>Youtube Client App</h6>
+                                <div class="progress"><div class="determinate yellow darken-4" style="width:78%"></div></div>
+                            </div><!-- Admin Task -->
+                            <div class="admin-task">
+                                <h6>HTML5 Validation Report</h6>
+                                <div class="progress"><div class="determinate purple lighten-3" style="width: 70%"></div></div>
+                            </div><!-- Admin Task -->
+                            <div class="admin-task">
+                                <h6>Google Chrome Extentions</h6>
+                                <div class="progress"><div class="determinate green" style="width: 45%"></div></div>
+                            </div><!-- Admin Task -->
+                        </div>
+                    </div><!-- Task -->
+
+                    <div id="event">
+                        <div class="event-inner scroll">
+                            <h5>6 Events are Coming This Week</h5>
+                            <div class="admin-event">
+                                <span class="orange darken-4">23 Mar</span>
+                                <p>Old school Red, White, and Blue satin</p>
+                            </div><!-- Admin Event -->
+                            <div class="admin-event">
+                                <span class="green darken-4">05 Aug</span>
+                                <p>Hook-and-loop closure firm assures for everyone. </p>
+                            </div><!-- Admin Event -->
+                            <div class="admin-event">
+                                <span class="brown darken-5">13 Jan</span>
+                                <p>The ideal award for the champion your event. </p>
+                            </div><!-- Admin Event -->
+                            <div class="admin-event">
+                                <span class="blue lighten-2">20 Oct</span>
+                                <p>Belt is more than 6" wide and has padded inner</p>
+                            </div><!-- Admin Event -->
+                        </div>
+                    </div><!-- Event -->
+
+                </div>
+            </div><!-- Notification Dropdown -->
+        </div><!-- Notifications -->
+        <div class="launcher">
+            <a class="click-btn" href="#" title=""><i class="ti-widget"></i></a>
+            <div class="launcher-dropdown z-depth-2">
+                <a href="mail.html" title="" class="launch-btn"><i class="ti-comment-alt blue-text"></i> <span>Mail Box</span></a>
+                <a href="profile.html" title="" class="launch-btn"><i class="ti-user green-text"></i> <span>View Profile</span></a>
+                <a href="dynamic-gallery.html" title="" class="launch-btn"><i class="ti-layers purple-text"></i> <span>Gallery</span></a>
+                <a href="steps-form.html" title="" class="launch-btn"><i class="ti-panel cyan-text"></i> <span>Steps Form</span></a>
+                <a href="tasks.html" title="" class="launch-btn"><i class="ti-view-list-alt red-text"></i> <span>Recent Tasks</span></a>
+                <a href="login.html" title="" class="launch-btn"><i class="ti-lock orange-text"></i> <span>Sign Out</span></a>
+            </div>
+        </div><!-- Launcher -->
+    </div><!-- Topbar Links -->
+</div><!-- Top Bar -->
+
 {% block body %}
 {% endblock %}
-</body>
 
 <script src="{% static 'delight/js/jquery.min.js' %}"></script>
+<script src="{% static 'delight/js/jquery.steps.min.js' %}"></script>
 <script src="{% static 'delight/js/materialize.min.js' %}"></script>
 <script src="{% static 'delight/js/enscroll-0.5.2.min.js' %}"></script>
+<script src="{% static 'delight/js/animate-headline.js' %}"></script>
 <script src="{% static 'delight/js/slick.min.js' %}"></script>
 <script src="{% static 'delight/js/script.js' %}" type="text/javascript"></script>
+<script src="{% static 'delight/js/isotope.js' %}"></script>
 
+<script src="{% static 'delight/js/step-form.js' %}"></script>
+
+
+</body>
 </html>
