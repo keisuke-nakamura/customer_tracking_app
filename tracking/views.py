@@ -15,12 +15,20 @@ def registration(request):
     return render(request, 'customer_registration.html')
 
 
+def registration_tour(request):
+    return render(request, 'customer_registration_tour.html')
+
+
 def unassigned(request):
     return render(request, 'unassigned.html')
 
 
-def how_to_use(request):
-    return render(request, 'how_to_use.html')
+def authority(request):
+    return render(request, 'authority.html')
+
+
+def authority_tour(request):
+    return render(request, 'authority_tour.html')
 
 
 def tour(request):

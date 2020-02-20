@@ -1,21 +1,16 @@
-{% extends "default.html" %}
+{% extends 'default.html' %}
 
 {% block tour %}
-    <li><a href="{% url 'index' %}">Page Tour</a></li>
-{% endblock %}
-
-{% block index-modal %}
-
+    <li><a href="{% url 'authority_tour' %}">Page Tour</a></li>
 {% endblock %}
 
 {% block body %}
     {% load static %}
-
     <div class="content-area">
         <div class="breadcrumb-bar">
             <div class="page-title">
-                <h1>見込客一覧</h1>
-                <span>Potential Customer List</span>
+                <h1>ユーザ権限</h1>
+                <span>User Authority</span>
             </div>
 
             <form class="search-admin waves-effect">
@@ -26,36 +21,36 @@
             <ul class="admin-breadcrumb">
                 <li><a href="#" title="">Dashboard</a></li>
                 {#                <li><a href="#" title="">Pages</a></li>#}
-                <li>Potential Customer List</li>
+                <li>User Authority</li>
             </ul>
         </div><!-- Breadcrumb Bar -->
 
         <div class="widgets-wrapper">
             <div class="streaming-table">
                 <span id="found" class="label label-info"></span>
-                <table id="stream_table" class='table table-bordered'>
+                <table id="stream_table" class='table table-striped table-bordered'>
                     <thead>
                     <tr>
                         <th>#</th>
                         <th>Name</th>
-                        <th>PremiseName</th>
-                        <th>Address</th>
-                        <th>PhoneNumber</th>
-                        <th>Registered</th>
+                        <th>Kana</th>
+                        <th>Authority</th>
+                        <th>Mail</th>
+                        <th>Password</th>
                     </tr>
                     </thead>
                     <tbody>
-                    <tr><td>1</td><td><a href="#modal999">会田 太郎</a></td><td>メゾン平間</td><td>北海道</td><td>090-xxxx-xxxx</td><td>2019/02/09</td></tr>
-                    <tr><td>2</td><td><a href="#modal999">井上 二郎</a></td><td>ルグラン301</td><td>青森県</td><td>090-xxxx-xxxx</td><td>2020/01/23</td></tr>
-                    <tr><td>3</td><td><a href="#modal999">植松 三郎</a></td><td>エントランス中松</td><td>岩手県</td><td>090-xxxx-xxxx</td><td>2019/12/05</td></tr>
-                    <tr><td>4</td><td><a href="#modal999">遠藤 史郎</a></td><td>ハイツカヤヌマ</td><td>宮城県</td><td>090-xxxx-xxxx</td><td>2019/11/30</td></tr>
-                    <tr><td>5</td><td><a href="#modal999">恩田 五郎</a></td><td>グランドール101</td><td>秋田県</td><td>090-xxxx-xxxx</td><td>2020/01/24</td></tr>
-                    <tr><td>6</td><td><a href="#modal999">金子 六郎</a></td><td>グランドール201</td><td>山形県</td><td>090-xxxx-xxxx</td><td>2020/02/18</td></tr>
-                    <tr><td>7</td><td><a href="#modal999">木田 七尾</a></td><td>ラビングパレス</td><td>福島県</td><td>090-xxxx-xxxx</td><td>2020/03/05</td></tr>
-                    <tr><td>8</td><td><a href="#modal999">工藤 真一</a></td><td>恵比寿ガーデンプレイス</td><td>茨城県</td><td>090-xxxx-xxxx</td><td>2019/10/29</td></tr>
-                    <tr><td>9</td><td><a href="#modal999">毛塚 治虫</a></td><td>長野駅徒歩2分</td><td>栃木県</td><td>090-xxxx-xxxx</td><td>2019/08/15</td></tr>
-                    <tr><td>10</td><td><a href="#modal999">国宝 憲一</a></td><td>mannish202</td><td>群馬県</td><td>090-xxxx-xxxx</td><td>2020/01/16</td></tr>
-                    <tr><td>47</td><td><a href="#modal999">竜堂 始</a></td><td>パレス桑名</td><td>沖縄県</td><td>090-xxxx-xxxx</td><td>2020/03/28</td></tr>
+                    <tr><td>1</td><td>会田 太郎</td><td>あいだたろう</td><td>支店長</td><td>xxxx@xxxx.co.jp</td><td>*********</td></tr>
+                    <tr><td>2</td><td>井上 二郎</td><td>いのうえじろう</td><td>一般</td><td>xxxx@gmail.com</td><td>*********</td></tr>
+                    <tr><td>3</td><td>植松 三郎</td><td>うえまつさぶろう</td><td>一般</td><td>xxxx@gmail.com</td><td>*********</td></tr>
+                    <tr><td>4</td><td>遠藤 史郎</td><td>えんどうしろう</td><td>一般</td><td>xxxx@fine-net.co.jp</td><td>*********</td></tr>
+                    <tr><td>5</td><td>恩田 五郎</td><td>おんだごろう</td><td>一般</td><td>xxxx@nifty.com</td><td>*********</td></tr>
+                    <tr><td>6</td><td>金子 六郎</td><td>かねころくろう</td><td>一般</td><td>xxxx@xxxx.co.jp</td><td>*********</td></tr>
+                    <tr><td>7</td><td>木田 七尾</td><td>きだななお</td><td>一般</td><td>xxxx@gmail.com</td><td>*********</td></tr>
+                    <tr><td>8</td><td>工藤 真一</td><td>くどうしんいち</td><td>一般</td><td>xxxx@fine-net.co.jp</td><td>*********</td></tr>
+                    <tr><td>9</td><td>毛塚 治虫</td><td>けづかおさむ</td><td>一般</td><td>xxxx@nifty.com</td><td>*********</td></tr>
+                    <tr><td>10</td><td>国宝 憲一</td><td>こくほうけんいち</td><td>一般</td><td>xxxx@xxxx.co.jp</td><td>*********</td></tr>
+                    <tr><td>47</td><td>竜堂 始</td><td>りゅうどうはじめ</td><td>管理者</td><td>xxxx@gmail.com</td><td>*********</td></tr>
                     </tbody>
                 </table>
                 <div id="summary">
@@ -66,7 +61,42 @@
         </div>
     </div><!-- Content Area -->
 
-    <div class="modal scroll" id="modal999">
+
+
+    <ul class="default_list contacts-list scroll">
+        <li>
+            <a href="#contactEditUser" title="" class="contact-info" data-number="+1-202-555-0102">
+                <span class="info-img"><img src="http://placehold.it/128x128" alt=""></span>
+                <span class="info-detail"><i class="cnt-name">Gabriel Saunders</i><i class="mail-id">gabriel@materiallab@pro</i></span>
+            </a>
+        </li>
+        <li>
+            <a href="#contactEditUser" title="" class="contact-info" data-number="+1-202-555-0102">
+                <span class="info-img"><img src="http://placehold.it/128x128" alt=""></span>
+                <span class="info-detail"><i class="cnt-name">Shawna Cohen</i><i class="mail-id">shawna@materiallab@pro</i></span>
+            </a>
+        </li>
+        <li>
+            <a href="#contactEditUser" title="" class="contact-info" data-number="+1-202-555-0102">
+                <span class="info-img"><img src="http://placehold.it/128x128" alt=""></span>
+                <span class="info-detail"><i class="cnt-name">Jason Kendall</i><i class="mail-id">jason@materiallab.pro</i></span>
+            </a>
+        </li>
+        <li>
+            <a href="#contactEditUser" title="" class="contact-info" data-number="+1-202-555-0102">
+                <span class="info-img"><img src="http://placehold.it/128x128" alt=""></span>
+                <span class="info-detail"><i class="cnt-name">Thomas Banks</i><i class="mail-id">thomas@materiallab.pro</i></span>
+            </a>
+        </li>
+        <li>
+            <a href="#contactEditUser" title="" class="contact-info" data-number="+1-202-555-0102">
+                <span class="info-img"><img src="http://placehold.it/128x128" alt=""></span>
+                <span class="info-detail"><i class="cnt-name">Rebecca Harrisr</i><i class="mail-id">rebecca@materiallab.pro</i></span>
+            </a>
+        </li>
+    </ul>
+
+    <div class="modal scroll" id="contactEditUser">
         <div class="modal-content">
             <div class="contact-header blue">
                 <h4>Edit Contact</h4>
@@ -119,12 +149,4 @@
             </div>
         </div>
     </div><!-- Modal Box  -->
-
-    <script src="{% static 'delight/js/datatable.js' %}"></script>
-
-
 {% endblock %}
-
-
-
-

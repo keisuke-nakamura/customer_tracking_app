@@ -2,18 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6dd0b3b2-4a6f-4a3b-9282-1b24fb886ef3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tracking/static/delight/images/breadcrumb.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tracking/static/delight/images/homes-chan-151-159.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tracking/static/delight/js/step-form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tracking/templates/customer_registration.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tracking/templates/how_to_use.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tracking/templates/tour.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tracking/templates/unassigned.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tracking/static/delight/js/tour-authority.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tracking/static/delight/js/tour-registration.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tracking/templates/authority.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tracking/templates/authority_tour.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tracking/templates/customer_registration_tour.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/delight/steps-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/tracking/static/delight/steps-form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tracking/templates/customer_registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/tracking/templates/customer_registration.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tracking/templates/default.html" beforeDir="false" afterPath="$PROJECT_DIR$/tracking/templates/default.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tracking/templates/how_to_use.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tracking/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tracking/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/tracking/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tracking/templates/unassigned.html" beforeDir="false" afterPath="$PROJECT_DIR$/tracking/templates/unassigned.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tracking/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/tracking/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tracking/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/tracking/views.py" afterDir="false" />
     </list>
@@ -30,8 +30,8 @@
       <list>
         <option value="Python Script" />
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -120,7 +120,8 @@
       <workItem from="1581001050910" duration="1235000" />
       <workItem from="1581394959973" duration="7909000" />
       <workItem from="1581412973750" duration="9757000" />
-      <workItem from="1581927945288" duration="22306000" />
+      <workItem from="1581927945288" duration="22906000" />
+      <workItem from="1582073717119" duration="19321000" />
     </task>
     <servers />
   </component>
@@ -131,9 +132,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1581425651975">
+    <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1582075357262">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1582075357262" />
     <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1581425651975" />
     <state x="698" y="128" key="#customer_tracking_app" timestamp="1581928100340">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -150,35 +152,35 @@
     <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1581988339089" />
     <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1581403461671" />
     <state x="2660" y="276" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1581001064570" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1582012965807">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1582075357527">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1582012965807" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1582075357527" />
     <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1581425671591" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1582012965807">
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1582075357527">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1582012965807" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1582075357527" />
     <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1581425671591" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1582012965807">
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1582075357527">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1582012965807" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1582075357527" />
     <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1581425671591" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1582012965807">
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1582075357527">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1582012965807" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1582075357527" />
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1581425671591" />
     <state x="468" y="163" key="SettingsEditor" timestamp="1581994093376">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="468" y="163" key="SettingsEditor/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1581994093376" />
     <state x="468" y="163" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1581001545213" />
-    <state x="634" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1581927946757">
+    <state x="634" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1582073756466">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="634" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1581927946757" />
+    <state x="634" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1582073756466" />
     <state x="634" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1581412975036" />
     <state x="1920" y="225" width="1296" height="718" maximized="true" key="dock-window-1" timestamp="1582008408630">
       <screen x="1920" y="0" width="1280" height="984" />
@@ -200,9 +202,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="741" y="251" width="729" height="789" key="find.popup/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1582004222801" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1581929098677">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1582101376581">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1581929098677" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1582101376581" />
   </component>
 </project>

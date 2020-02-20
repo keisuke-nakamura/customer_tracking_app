@@ -1,45 +1,152 @@
 {% extends "default.html" %}
+
+{% block tour %}
+    <li><a href="{% url 'unassigned' %}">Page Tour</a></li>
+{% endblock %}
+
 {% block body %}
     {% load static %}
 
-    <div class="sidemenu">
-        <div class="sidemenu-inner scroll">
-            <div class="admin">
-                <img src="{% static 'delight/images/homes-chan-151-159.png' %}" alt="" />
-                <div class="admin-detail">
-                    <h6>ホームズちゃん</h6>
-                    <a class="dropdown-button" href='#' title="" data-activates='dropdown2'><span class="green"></span> Online <i class="ti-angle-down"></i></a>
-                    <ul id='dropdown2' class='dropdown-content'>
-                        <li><a href="#!">Offline</a></li>
-                        <li><a href="#!">Busy</a></li>
-                        <li><a href="#!">Away</a></li>
-                        <li class="divider"></li>
-                        <li><a href="login.html">Signout</a></li>
-                    </ul>
+    <div class="content-area">
+        <div class="breadcrumb-bar">
+            <div class="page-title">
+                <h1>未割り当て一覧</h1>
+                <span>Potential Customer List</span>
+            </div>
+
+            <form class="search-admin waves-effect">
+                <input type="text" placeholder="Enter Keyword To Search..." />
+                <button><i class="ti-search"></i></button>
+            </form>
+
+            <ul class="admin-breadcrumb">
+                <li><a href="#" title="">Dashboard</a></li>
+                {#                <li><a href="#" title="">Pages</a></li>#}
+                <li>Potential Customer List</li>
+            </ul>
+        </div><!-- Breadcrumb Bar -->
+
+        <div class="widgets-wrapper">
+            <div class="streaming-table">
+                <span id="found" class="label label-info"></span>
+                <table id="stream_table" class='table table-striped table-bordered'>
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>PremiseName</th>
+                        <th>Address</th>
+                        <th>PhoneNumber</th>
+                        <th>Registered</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr><td>1</td><td>会田 太郎</td><td>メゾン平間</td><td>北海道</td><td>090-xxxx-xxxx</td><td>2019/02/09</td></tr>
+                    <tr><td>2</td><td>井上 二郎</td><td>ルグラン301</td><td>青森県</td><td>090-xxxx-xxxx</td><td>2020/01/23</td></tr>
+                    <tr><td>3</td><td>植松 三郎</td><td>エントランス中松</td><td>岩手県</td><td>090-xxxx-xxxx</td><td>2019/12/05</td></tr>
+                    <tr><td>4</td><td>遠藤 史郎</td><td>ハイツカヤヌマ</td><td>宮城県</td><td>090-xxxx-xxxx</td><td>2019/11/30</td></tr>
+                    <tr><td>5</td><td>恩田 五郎</td><td>グランドール101</td><td>秋田県</td><td>090-xxxx-xxxx</td><td>2020/01/24</td></tr>
+                    <tr><td>6</td><td>金子 六郎</td><td>グランドール201</td><td>山形県</td><td>090-xxxx-xxxx</td><td>2020/02/18</td></tr>
+                    <tr><td>7</td><td>木田 七尾</td><td>ラビングパレス</td><td>福島県</td><td>090-xxxx-xxxx</td><td>2020/03/05</td></tr>
+                    <tr><td>8</td><td>工藤 真一</td><td>恵比寿ガーデンプレイス</td><td>茨城県</td><td>090-xxxx-xxxx</td><td>2019/10/29</td></tr>
+                    <tr><td>9</td><td>毛塚 治虫</td><td>長野駅徒歩2分</td><td>栃木県</td><td>090-xxxx-xxxx</td><td>2019/08/15</td></tr>
+                    <tr><td>10</td><td>国宝 憲一</td><td>mannish202</td><td>群馬県</td><td>090-xxxx-xxxx</td><td>2020/01/16</td></tr>
+                    <tr><td>47</td><td>竜堂 始</td><td>パレス桑名</td><td>沖縄県</td><td>090-xxxx-xxxx</td><td>2020/03/28</td></tr>
+                    </tbody>
+                </table>
+                <div id="summary">
+                    <div>
+                    </div>
                 </div>
-            </div><!-- Admin -->
-
-            <nav class="admin-nav">
-                <h6>メニュー</h6>
-                <ul>
-                    <li><a class="waves-effect" href="{% url 'index' %}" title=""><i class="ti-home red lighten-1"></i> 見込客一覧</a>
-                    </li>
-                    <li><a class="waves-effect" href="{% url 'registration' %}" title=""><i class="ti-widgetized pink lighten-3"></i> 見込登録</a>
-                    <li><a class="waves-effect" href="#" title=""><i class="ti-widgetized blue lighten-3"></i> 未割当一覧</a>
-
-                    </li>
-                    <li><a class="waves-effect" href="#" title=""><i class="ti-email green lighten-3"></i> ヘルプ</a>
-                        <ul>
-                            <li><a href="{% url 'how_to_use' %}" title="">how to use</a></li>
-                            <li><a href="{% url 'tour' %}" title="">page tour</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="waves-effect" href="{% url 'login' %}" title=""><i class="ti-key blue-grey lighten-2"></i> ログアウト</a>
-
-                    </li>
-                </ul>
-            </nav>
+            </div>
         </div>
-    </div><!-- Sidemenu -->
+    </div><!-- Content Area -->
+
+    <ul class="default_list contacts-list scroll">
+        <li>
+            <a href="#contactEditUser" title="" class="contact-info" data-number="+1-202-555-0102">
+                <span class="info-img"><img src="http://placehold.it/128x128" alt=""></span>
+                <span class="info-detail"><i class="cnt-name">Gabriel Saunders</i><i class="mail-id">gabriel@materiallab@pro</i></span>
+            </a>
+        </li>
+        <li>
+            <a href="#contactEditUser" title="" class="contact-info" data-number="+1-202-555-0102">
+                <span class="info-img"><img src="http://placehold.it/128x128" alt=""></span>
+                <span class="info-detail"><i class="cnt-name">Shawna Cohen</i><i class="mail-id">shawna@materiallab@pro</i></span>
+            </a>
+        </li>
+        <li>
+            <a href="#contactEditUser" title="" class="contact-info" data-number="+1-202-555-0102">
+                <span class="info-img"><img src="http://placehold.it/128x128" alt=""></span>
+                <span class="info-detail"><i class="cnt-name">Jason Kendall</i><i class="mail-id">jason@materiallab.pro</i></span>
+            </a>
+        </li>
+        <li>
+            <a href="#contactEditUser" title="" class="contact-info" data-number="+1-202-555-0102">
+                <span class="info-img"><img src="http://placehold.it/128x128" alt=""></span>
+                <span class="info-detail"><i class="cnt-name">Thomas Banks</i><i class="mail-id">thomas@materiallab.pro</i></span>
+            </a>
+        </li>
+        <li>
+            <a href="#contactEditUser" title="" class="contact-info" data-number="+1-202-555-0102">
+                <span class="info-img"><img src="http://placehold.it/128x128" alt=""></span>
+                <span class="info-detail"><i class="cnt-name">Rebecca Harrisr</i><i class="mail-id">rebecca@materiallab.pro</i></span>
+            </a>
+        </li>
+    </ul>
+
+    <div class="modal scroll" id="contactEditUser">
+        <div class="modal-content">
+            <div class="contact-header blue">
+                <h4>Edit Contact</h4>
+                <div class="contact-img">
+                    <label for="file-input"><img src="http://placehold.it/128x128" alt="" /></label>
+                    <input id="file-input" type="file">
+                </div>
+                <strong class="contact-name"></strong>
+                <div class="contact-groups">
+                    <div class="check-field">
+                        <input type="checkbox" class="filled-in" id="family" checked="checked" /> <label for="family">Family</label>
+                    </div>
+                    <div class="check-field">
+                        <input type="checkbox" class="filled-in" id="friends" /> <label for="friends">Friends</label>
+                    </div>
+                    <div class="check-field">
+                        <input type="checkbox" class="filled-in" id="work"  /> <label for="work">Work</label>
+                    </div>
+                    <div class="check-field">
+                        <input type="checkbox" class="filled-in" id="others"  /> <label for="others">Others</label>
+                    </div>
+                </div>
+            </div><!-- Contact Header -->
+
+            <div class="contact-body">
+                <form>
+                    <div class="input-field">
+                        <label for="full_name">Full Name</label>
+                        <input id="full_name" class="validate" type="text" value="Name" />
+                    </div>
+                    <div class="input-field">
+                        <label for="email_id">Email Address</label>
+                        <input id="email_id" class="validate" type="email" value="Email" />
+                    </div>
+                    <div class="input-field">
+                        <label for="phone_number">Phone Number</label>
+                        <input id="phone_number" class="validate" type="text" value="Phone" />
+                    </div>
+                    <div class="input-field">
+                        <label for="add">Address</label>
+                        <input id="add" class="validate" type="text" value="" />
+                    </div>
+                    <div class="button-set">
+                        <button type="button" class="modal-action modal-close waves-effect waves-light btn-flat pink lighten-2 white-text">Close</button>
+                        <button type="button" class="modal-action modal-close waves-effect waves-light btn-flat red white-text delete-contact">Delete</button>
+                        <button type="button" class="modal-action modal-close waves-effect waves-light btn-flat green lighten-2 white-text save-contact">Save</button>
+                        <button type="button" class="modal-action modal-close waves-effect waves-light btn-flat green lighten-2 white-text add-new-contact">Add</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div><!-- Modal Box  -->
 
 {% endblock %}
