@@ -35,3 +35,6 @@ def tour(request):
     return render(request, 'tour.html')
 
 
+def customer_detail(request):
+    return render(request, 'customer_detail.html')
+

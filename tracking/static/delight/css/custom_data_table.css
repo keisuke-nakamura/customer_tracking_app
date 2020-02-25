@@ -1,0 +1,15 @@
+tr.customer-table{
+    cursor:pointer;
+}
+tr.customer-table:hover {
+    color:#000000;
+    background:#d7dde2 !important;
+}
+
+tr.potential_customer-table{
+    cursor:pointer;
+}
+tr.potential_customer-table:hover {
+    color:#000000;
+    background:#d7dde2 !important;
+}

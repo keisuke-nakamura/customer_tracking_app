@@ -16,6 +16,7 @@
     <link rel="stylesheet" type="text/css" href="{% static 'delight/css/style.css' %}" />
     <link rel="stylesheet" type="text/css" href="{% static 'delight/css/responsive.css' %}" />
     <link rel="stylesheet" type="text/css" href="{% static 'delight/css/color.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'delight/css/custom_data_table.css' %}">
 
 </head>
 <body>
@@ -225,7 +226,20 @@
 
 <script src="{% static 'delight/js/step-form.js' %}"></script>
 {% block index-modal %}{% endblock %}
-{#<script src="{% static 'delight/js/datatable.js' %}"></script>#}
+
+<script>
+jQuery( function($) {
+    $('tbody tr[data-href]').addClass('clickable').click( function() {
+        window.location = $(this).attr('data-href');
+    }).find('a').hover( function() {
+        $(this).parents('tr').unbind('click');
+    }, function() {
+        $(this).parents('tr').click( function() {
+            window.location = $(this).attr('data-href');
+        });
+    });
+});
+</script>
 
 </body>
 </html>
