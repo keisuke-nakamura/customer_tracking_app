@@ -6,6 +6,170 @@
 
 {% block body %}
     {% load static %}
+    <div class="content-area">
+        <div class="breadcrumb-bar">
+            <div class="page-title">
+                <h1>顧客詳細</h1>
+                <span>customer detail</span>
+            </div>
+
+            <form class="search-admin waves-effect">
+                <input type="text" placeholder="Enter Keyword To Search..." />
+                <button><i class="ti-search"></i></button>
+            </form>
+
+            <ul class="admin-breadcrumb">
+                <li><a href="#" title="">Dashboard</a></li>
+                <li><a href="#" title="">Pages</a></li>
+                <li>Forms</li>
+            </ul>
+        </div><!-- Breadcrumb Bar -->
+
+        <div class="widgets-wrapper">
+            <div class="row">
+                <div class="masonary">
+
+                    <div class="col s6">
+                        <div class="widget z-depth-1">
+                            <div class="loader"></div>
+
+                            <div class="widget-title">
+                                <h3>スタンダード バージョン</h3>
+                                <p> フォームテスト</p>
+                                <a class="options dropdown-button waves-effect" href="#" title="" data-activates='dropdown3'><i class="ti-more-alt"></i></a>
+                                <ul id='dropdown3' class='dropdown-content'>
+                                    <li><a class="rld" href="#!" title="">Reload</a></li>
+                                    <li><a class="fl-scr" href="#!" title="">Full Screen</a></li>
+                                    <li><a class="rmv" href="#!" title="">Remove</a></li>
+                                </ul>
+                            </div>
+                            <form class="col s12">
+                                <div class="row">
+                                    <div class="input-field col s6">
+                                        <input placeholder="姓" id="first_name" type="text" class="validate">
+                                        <label for="first_name">First Name</label>
+                                    </div>
+                                    <div class="input-field col s6">
+                                        <input placeholder="名" id="last_name" type="text" class="validate">
+                                        <label for="last_name">Last Name</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s6">
+                                        <input placeholder="生年月日" id="birthday" type="text" class="validate">
+                                        <label for="birthday">birthday</label>
+                                    </div>
+                                    <div class="input-field col s6">
+                                        <input placeholder="性別" id="gender" type="text" class="validate">
+                                        <label for="gender">gender</label>
+                                    </div>
+                                </div>
+
+                            </form>
+
+                        </div><!-- Widget -->
+                    </div>
+
+
+                    <div class="col s6">
+                        <div class="widget z-depth-1">
+                            <div class="loader"></div>
+                            <div class="widget-title">
+                                <h3>アイコン バージョン</h3>
+                                <p> アイコン付フォームテスト</p>
+                                <a class="options dropdown-button waves-effect" href="#" title="" data-activates='dropdown3'><i class="ti-more-alt"></i></a>
+                                <ul id='dropdown3' class='dropdown-content'>
+                                    <li><a class="rld" href="#!" title="">Reload</a></li>
+                                    <li><a class="fl-scr" href="#!" title="">Full Screen</a></li>
+                                    <li><a class="rmv" href="#!" title="">Remove</a></li>
+                                </ul>
+                            </div>
+                            <form>
+                                <div class="row">
+                                    <div class="input-field col s6">
+                                        <i class="ti-direction prefix"></i>
+                                        <input id="icon_fax" type="text" class="validate">
+                                        <label for="icon_fax">ファックス</label>
+                                    </div>
+                                    <div class="input-field col s6">
+                                        <i class="ti-mobile prefix"></i>
+                                        <input id="icon_telephone" type="tel" class="validate">
+                                        <label for="icon_telephone">電話番号</label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div><!-- Widget -->
+                    </div>
+
+                    <div class="col s6">
+                        <div class="widget z-depth-1">
+                            <div class="loader"></div>
+                            <div class="widget-title">
+                                <h3>セレクトフォーム</h3>
+                                <p>セレクトボックステスト</p>
+                                <a class="options dropdown-button waves-effect" href="#" title="" data-activates='dropdown4'><i class="ti-more-alt"></i></a>
+                                <ul id='dropdown4' class='dropdown-content'>
+                                    <li><a class="rld" href="#!" title="">Reload</a></li>
+                                    <li><a class="fl-scr" href="#!" title="">Full Screen</a></li>
+                                    <li><a class="rmv" href="#!" title="">Remove</a></li>
+                                </ul>
+                            </div>
+                            <form class="col s12">
+                                <div class="row">
+
+                                    <div class="input-field col s12">
+                                        <select>
+                                            <option value="" disabled selected>媒体</option>
+                                            <option value="1">SUUMO</option>
+                                            <option value="2">HOME'S</option>
+                                            <option value="3">自社ホームページ</option>
+                                        </select>
+                                        <label>Media</label>
+                                    </div>
+
+                                    <div class="input-field col s12">
+                                        <select multiple>
+                                            <option value="" disabled selected>反響元</option>
+                                            <option value="1">電話</option>
+                                            <option value="2">メール</option>
+                                            <option value="3">来店</option>
+                                        </select>
+                                        <label>reaction</label>
+                                    </div>
+
+                                </div>
+                            </form>
+
+                        </div><!-- Widget -->
+                    </div>
+                    <div class="col s6">
+                        <div class="widget z-depth-1">
+                            <div class="loader"></div>
+                            <div class="widget-title">
+                                <h3>テキストエリア</h3>
+                                <p>自由入力フォームテスト</p>
+                                <a class="options dropdown-button waves-effect" href="#" title="" data-activates='dropdown6'><i class="ti-more-alt"></i></a>
+                                <ul id='dropdown6' class='dropdown-content'>
+                                    <li><a class="rld" href="#!" title="">Reload</a></li>
+                                    <li><a class="fl-scr" href="#!" title="">Full Screen</a></li>
+                                    <li><a class="rmv" href="#!" title="">Remove</a></li>
+                                </ul>
+                            </div>
+                            <form class="col s12">
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                        <label for="textarea1">顧客メモ</label>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div><!-- Widget -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- Content Area -->
 
 
 {% endblock %}
