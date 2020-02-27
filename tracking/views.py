@@ -11,6 +11,10 @@ def index(request):
     return render(request, 'index.html')
 
 
+def index_tour(request):
+    return render(request, 'index_tour.html')
+
+
 def registration(request):
     return render(request, 'customer_registration.html')
 

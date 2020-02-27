@@ -1,7 +1,7 @@
 {% extends "default.html" %}
 
-{% block tour %}
-    <li><a href="{% url 'index' %}">Page Tour</a></li>
+{% block howtouse %}
+    <a href="{% url 'index_tour' %}" title="" class="launch-btn"><i class="ti-view-list-alt red-text"></i> <span>HowToUse</span></a>
 {% endblock %}
 
 {% block index-modal %}
@@ -18,16 +18,6 @@
                 <span>Potential Customer List</span>
             </div>
 
-            <form class="search-admin waves-effect">
-                <input type="text" placeholder="Enter Keyword To Search..." />
-                <button><i class="ti-search"></i></button>
-            </form>
-
-            <ul class="admin-breadcrumb">
-                <li><a href="#" title="">Dashboard</a></li>
-                {#                <li><a href="#" title="">Pages</a></li>#}
-                <li>Potential Customer List</li>
-            </ul>
         </div><!-- Breadcrumb Bar -->
 
         <div class="widgets-wrapper">
@@ -67,7 +57,5 @@
     </div><!-- Content Area -->
 
 {% endblock %}
-
-
 
 
