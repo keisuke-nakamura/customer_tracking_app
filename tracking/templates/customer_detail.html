@@ -13,16 +13,6 @@
                 <span>customer detail</span>
             </div>
 
-            <form class="search-admin waves-effect">
-                <input type="text" placeholder="Enter Keyword To Search..." />
-                <button><i class="ti-search"></i></button>
-            </form>
-
-            <ul class="admin-breadcrumb">
-                <li><a href="#" title="">Dashboard</a></li>
-                <li><a href="#" title="">Pages</a></li>
-                <li>Forms</li>
-            </ul>
         </div><!-- Breadcrumb Bar -->
 
         <div class="widgets-wrapper">
@@ -62,6 +52,12 @@
                                     <div class="input-field col s6">
                                         <input placeholder="性別" id="gender" type="text" class="validate">
                                         <label for="gender">gender</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input placeholder="希望物件" id="premise" type="text" class="validate">
+                                        <label for="premise">premise</label>
                                     </div>
                                 </div>
 
@@ -142,6 +138,43 @@
 
                         </div><!-- Widget -->
                     </div>
+
+                    <div class="col s6">
+                        <div class="widget z-depth-1">
+                            <div class="loader"></div>
+                            <div class="widget-title">
+                                <h3>メール送信設定</h3>
+                                <p>ミックスフォームテスト</p>
+                                <a class="options dropdown-button waves-effect" href="#" title="" data-activates='dropdown4'><i class="ti-more-alt"></i></a>
+                                <div class="input-field col s12">
+                                    <p>
+                                        <input type="checkbox" id="indeterminate-checkbox" />
+                                        <label for="indeterminate-checkbox">メールを送信する</label>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <form class="col s12">
+
+                                <div class="row">
+
+                                    <div class="input-field col s12">
+                                        <select>
+                                            <option value="" disabled selected>おすすめ物件公開時のメール送信頻度</option>
+                                            <option value="1">無制限</option>
+                                            <option value="2">週5通まで</option>
+                                            <option value="3">週3通まで</option>
+                                        </select>
+                                        <label>frequency</label>
+                                    </div>
+
+                                </div>
+                            </form>
+
+                        </div><!-- Widget -->
+                    </div>
+
+
                     <div class="col s6">
                         <div class="widget z-depth-1">
                             <div class="loader"></div>
@@ -167,6 +200,12 @@
                         </div><!-- Widget -->
                     </div>
                 </div>
+            </div>
+            <div class="button-set">
+                <button type="button" class="modal-action modal-close waves-effect waves-light btn-flat pink lighten-2 white-text">キャンセル</button>
+                <button type="button" class="modal-action modal-close waves-effect waves-light btn-flat red white-text delete-contact">追客停止</button>
+                <button type="button" class="modal-action modal-close waves-effect waves-light btn-flat green lighten-2 white-text save-contact">保存</button>
+                {#                <button type="button" class="modal-action modal-close waves-effect waves-light btn-flat green lighten-2 white-text add-new-contact">Add</button>#}
             </div>
         </div>
     </div><!-- Content Area -->

@@ -84,7 +84,7 @@ $(window).on("load",function(){
     // Delete Contact
     $(".delete-contact").on('click',function(){
         $(".contacts-list").find('.focused').remove();
-        Materialize.toast('Your have successfully deleted a contact!', 4000);
+        Materialize.toast('追客を停止しました。', 4000);
     });
 
     // Save Edition in Contact
@@ -99,7 +99,7 @@ $(window).on("load",function(){
         $(".contacts-list").find('.focused').find(".contact-info").attr('data-number', phone);
         $(".contacts-list").find('.focused').find(".info-img img").attr('src', img);
 
-        Materialize.toast('Your changes have been saved!', 4000);
+        Materialize.toast('変更が保存されました', 4000);
 
     });
 
