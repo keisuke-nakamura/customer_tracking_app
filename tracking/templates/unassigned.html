@@ -14,22 +14,12 @@
                 <span>Potential Customer List</span>
             </div>
 
-            <form class="search-admin waves-effect">
-                <input type="text" placeholder="Enter Keyword To Search..." />
-                <button><i class="ti-search"></i></button>
-            </form>
-
-            <ul class="admin-breadcrumb">
-                <li><a href="#" title="">Dashboard</a></li>
-                {#                <li><a href="#" title="">Pages</a></li>#}
-                <li>Potential Customer List</li>
-            </ul>
         </div><!-- Breadcrumb Bar -->
 
         <div class="widgets-wrapper">
             <div class="streaming-table">
                 <span id="found" class="label label-info"></span>
-                <table id="stream_table" class='table table-striped table-bordered'>
+                <table id="foo-table" class='table table-striped table-bordered'>
                     <thead>
                     <tr>
                         <th>#</th>
@@ -41,17 +31,17 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr class="potential_customer-table"><td>1</td><td>会田 太郎</td><td>メゾン平間</td><td>北海道</td><td>090-xxxx-xxxx</td><td>2019/02/09</td></tr>
-                    <tr class="potential_customer-table"><td>2</td><td>井上 二郎</td><td>ルグラン301</td><td>青森県</td><td>090-xxxx-xxxx</td><td>2020/01/23</td></tr>
-                    <tr class="potential_customer-table"><td>3</td><td>植松 三郎</td><td>エントランス中松</td><td>岩手県</td><td>090-xxxx-xxxx</td><td>2019/12/05</td></tr>
-                    <tr class="potential_customer-table"><td>4</td><td>遠藤 史郎</td><td>ハイツカヤヌマ</td><td>宮城県</td><td>090-xxxx-xxxx</td><td>2019/11/30</td></tr>
-                    <tr class="potential_customer-table"><td>5</td><td>恩田 五郎</td><td>グランドール101</td><td>秋田県</td><td>090-xxxx-xxxx</td><td>2020/01/24</td></tr>
-                    <tr class="potential_customer-table"><td>6</td><td>金子 六郎</td><td>グランドール201</td><td>山形県</td><td>090-xxxx-xxxx</td><td>2020/02/18</td></tr>
-                    <tr class="potential_customer-table"><td>7</td><td>木田 七尾</td><td>ラビングパレス</td><td>福島県</td><td>090-xxxx-xxxx</td><td>2020/03/05</td></tr>
-                    <tr class="potential_customer-table"><td>8</td><td>工藤 真一</td><td>恵比寿ガーデンプレイス</td><td>茨城県</td><td>090-xxxx-xxxx</td><td>2019/10/29</td></tr>
-                    <tr class="potential_customer-table"><td>9</td><td>毛塚 治虫</td><td>長野駅徒歩2分</td><td>栃木県</td><td>090-xxxx-xxxx</td><td>2019/08/15</td></tr>
-                    <tr class="potential_customer-table"><td>10</td><td>国宝 憲一</td><td>mannish202</td><td>群馬県</td><td>090-xxxx-xxxx</td><td>2020/01/16</td></tr>
-                    <tr class="potential_customer-table"><td>47</td><td>竜堂 始</td><td>パレス桑名</td><td>沖縄県</td><td>090-xxxx-xxxx</td><td>2020/03/28</td></tr>
+                    <tr data-href="{% url 'unassigned_detail' %}" class="customer-table"><td>1</td><td>会田 太郎</td><td>メゾン平間</td><td>SUUMO</td><td>090-xxxx-xxxx</td><td>2019/02/09</td></tr>
+                    <tr data-href="{% url 'unassigned_detail' %}" class="customer-table"><td>2</td><td>井上 二郎</td><td>ルグラン301</td><td>HOME'S</td><td>090-xxxx-xxxx</td><td>2020/01/23</td></tr>
+                    <tr data-href="{% url 'unassigned_detail' %}" class="customer-table"><td>3</td><td>植松 三郎</td><td>エントランス中松</td><td>自社HP</td><td>090-xxxx-xxxx</td><td>2019/12/05</td></tr>
+                    <tr data-href="{% url 'unassigned_detail' %}" class="customer-table"><td>4</td><td>遠藤 史郎</td><td>ハイツカヤヌマ</td><td>SUUMO</td><td>090-xxxx-xxxx</td><td>2019/11/30</td></tr>
+                    <tr data-href="{% url 'unassigned_detail' %}" class="customer-table"><td>5</td><td>恩田 五郎</td><td>グランドール101</td><td>SUUMO</td><td>090-xxxx-xxxx</td><td>2020/01/24</td></tr>
+                    <tr data-href="{% url 'unassigned_detail' %}" class="customer-table"><td>6</td><td>金子 六郎</td><td>グランドール201</td><td>自社HP</td><td>090-xxxx-xxxx</td><td>2020/02/18</td></tr>
+                    <tr data-href="{% url 'unassigned_detail' %}" class="customer-table"><td>7</td><td>木田 七尾</td><td>ラビングパレス</td><td>SUUMO</td><td>090-xxxx-xxxx</td><td>2020/03/05</td></tr>
+                    <tr data-href="{% url 'unassigned_detail' %}" class="customer-table"><td>8</td><td>工藤 真一</td><td>恵比寿ガーデンプレイス</td><td>自社HP</td><td>090-xxxx-xxxx</td><td>2019/10/29</td></tr>
+                    <tr data-href="{% url 'unassigned_detail' %}" class="customer-table"><td>9</td><td>毛塚 治虫</td><td>長野駅徒歩2分</td><td>HOME'S</td><td>090-xxxx-xxxx</td><td>2019/08/15</td></tr>
+                    <tr data-href="{% url 'unassigned_detail' %}" class="customer-table"><td>10</td><td>国宝 憲一</td><td>mannish202</td><td>HOME'S</td><td>090-xxxx-xxxx</td><td>2020/01/16</td></tr>
+                    <tr data-href="{% url 'unassigned_detail' %}" class="customer-table"><td>47</td><td>竜堂 始</td><td>パレス桑名</td><td>HOME'S</td><td>090-xxxx-xxxx</td><td>2020/03/28</td></tr>
                     </tbody>
                 </table>
                 <div id="summary">
@@ -116,4 +106,37 @@
         </div>
     </div><!-- Modal Box  -->
 
+{% endblock %}
+
+{% block data-tables %}
+    <script>
+        jQuery( function($) {
+            $('tbody tr[data-href]').addClass('clickable').click( function() {
+                window.location = $(this).attr('data-href');
+            }).find('a').hover( function() {
+                $(this).parents('tr').unbind('click');
+            }, function() {
+                $(this).parents('tr').click( function() {
+                    window.location = $(this).attr('data-href');
+                });
+            });
+        });
+
+        jQuery(function($) {
+
+            $("#foo-table").DataTable({
+                // 件数切替機能 無効
+                lengthChange: false,
+                // 検索機能 無効
+                searching: true,
+                // ソート機能 無効
+                ordering: true,
+                // 情報表示 無効
+                info: false,
+                // ページング機能 無効
+                paging: true
+
+            });
+        });
+    </script>
 {% endblock %}

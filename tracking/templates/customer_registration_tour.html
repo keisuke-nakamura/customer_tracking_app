@@ -1,7 +1,7 @@
 {% extends "default.html" %}
 
-{% block tour %}
-    <li><a href="{% url 'registration_tour' %}">Page Tour</a></li>
+{% block howtouse %}
+    <a href="{% url 'registration_tour' %}" title="" class="launch-btn"><i class="ti-view-list-alt red-text"></i> <span>HowToUse</span></a>
 {% endblock %}
 
 {% block body %}
@@ -13,17 +13,6 @@
                 <h1>見込客登録</h1>
                 <span>Potential Customer Registration</span>
             </div>
-
-            <form class="search-admin waves-effect">
-                <input type="text" placeholder="Enter Keyword To Search..." />
-                <button><i class="ti-search"></i></button>
-            </form>
-
-            <ul class="admin-breadcrumb">
-                <li><a href="#" title="">Dashboard</a></li>
-                <li><a href="#" title="">Pages</a></li>
-                <li>Steps Form</li>
-            </ul>
         </div><!-- Breadcrumb Bar -->
 
         <div class="widgets-wrapper">
@@ -45,7 +34,7 @@
                             </div>
 
                             <form id="example-form" action="#">
-                                <div>
+                                <div id="profile">
                                     <h3>Profile</h3>
                                     <section>
                                         <div class="input-field">
@@ -54,13 +43,13 @@
                                         </div>
                                         <div class="input-field">
                                             <label for="password">ふりがな *</label>
-                                            <input id="password" name="password" type="email" class="required">
+                                            <input id="password" name="password" type="text" class="required">
                                         </div>
                                         <div class="input-field">
-                                            <label for="confirm">メールアドレス *</label>
-                                            <input id="confirm" name="confirm" type="text" class="required">
+                                            <label for="email">メールアドレス *</label>
+                                            <input id="email" name="email" type="email" class="required">
                                         </div>
-                                        <p>(*) Mandatory</p>
+                                        <p>(*) 必須項目</p>
                                     </section>
                                     <h3>住所</h3>
                                     <section>
@@ -74,26 +63,27 @@
                                             <input id="address" name="address" type="text">
                                         </div>
                                         <div class="input-field">
-                                            <label for="email">郵便番号 *</label>
-                                            <input id="email" name="text" type="text" class="required email">
+                                            <label for="zipcode">郵便番号 *</label>
+                                            <input id="zipcode" name="zipcode" type="text" class="required">
                                         </div>
 
-                                        <p>(*) Mandatory</p>
+                                        <p>(*) 必須項目</p>
                                     </section>
                                     <h3>物件情報その他</h3>
                                     <section>
                                         <div class="input-field">
                                             <label for="name">建物名 *</label>
-                                            <input id="name" name="name" type="text" class="required">
+                                            <input id="premise-name" name="name" type="text" class="required">
                                         </div>
                                         <div class="input-field">
                                             <label for="name">反響元 *</label>
-                                            <input id="name" name="name" type="text" class="required">
+                                            <input id="reaction-name" name="name" type="text" class="required">
                                         </div>
                                         <div class="input-field">
                                             <label for="name">媒体 *</label>
-                                            <input id="name" name="name" type="text" class="required">
+                                            <input id="media-name" name="name" type="text" class="required">
                                         </div>
+                                        <p>(*) 必須項目</p>
                                     </section>
 
                                 </div>

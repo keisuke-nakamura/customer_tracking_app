@@ -199,42 +199,12 @@
 
                         </div><!-- Widget -->
                     </div>
-
-                    <div class="col s6">
-                        <div class="widget z-depth-1">
-                            <div class="loader"></div>
-                            <div class="widget-title">
-                                <h3>担当者</h3>
-                                <p>セレクトボックステスト</p>
-                                <a class="options dropdown-button waves-effect" href="#" title="" data-activates='dropdown4'><i class="ti-more-alt"></i></a>
-                                <ul id='dropdown4' class='dropdown-content'>
-                                    <li><a class="rld" href="#!" title="">Reload</a></li>
-                                    <li><a class="fl-scr" href="#!" title="">Full Screen</a></li>
-                                    <li><a class="rmv" href="#!" title="">Remove</a></li>
-                                </ul>
-                            </div>
-                            <form class="col s12">
-                                <div class="row">
-
-                                    <div class="input-field col s12">
-                                        <select>
-                                            <option value="" disabled selected>担当者</option>
-                                            <option value="1">担当 太郎</option>
-                                            <option value="2">担当 二郎</option>
-                                            <option value="3">担当 站椿</option>
-                                        </select>
-                                        <label>Charge</label>
-                                    </div>
-
-                                </div>
-                            </form>
-                        </div><!-- Widget -->
-                    </div>
                 </div>
             </div>
             <div class="button-set">
-                <button type="button" class="modal-action modal-close waves-effect waves-light btn-flat pink lighten-2 white-text">キャンセル</button>
-                <button type="button" class="modal-action modal-close waves-effect waves-light btn-flat green lighten-2 white-text save-contact">登録</button>
+                <button id="cancel-button" type="button" class="modal-action modal-close waves-effect waves-light btn-flat pink lighten-2 white-text">キャンセル</button>
+                <button id="stop-button" type="button" class="modal-action modal-close waves-effect waves-light btn-flat red white-text delete-contact">追客停止</button>
+                <button id="save-button" type="button" class="modal-action modal-close waves-effect waves-light btn-flat green lighten-2 white-text save-contact">保存</button>
                 {#                <button type="button" class="modal-action modal-close waves-effect waves-light btn-flat green lighten-2 white-text add-new-contact">Add</button>#}
             </div>
         </div>
@@ -243,6 +213,9 @@
 
 {% endblock %}
 
-
+{% block tour-js %}
+    <script src="{% static 'delight/js/impromptu.js' %}"></script>
+    <script src="{% static 'delight/js/tour-customer-detail.js' %}"></script>
+{% endblock %}
 
 

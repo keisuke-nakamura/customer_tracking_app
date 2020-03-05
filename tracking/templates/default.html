@@ -71,8 +71,7 @@
         <nav class="admin-nav">
             <h6>メニュー</h6>
             <ul>
-                <li><a class="waves-effect" href="{% url 'index' %}" title=""><i class="ti-home red lighten-1"></i> 見込客一覧</a>
-                </li>
+                <li><a class="waves-effect" href="{% url 'index' %}" title=""><i class="ti-home red lighten-1"></i> 見込客一覧</a></li>
                 <li><a class="waves-effect" href="{% url 'registration' %}" title=""><i class="ti-widgetized pink lighten-3"></i> 見込登録</a></li>
                 <li><a class="waves-effect" href="{% url 'unassigned' %}" title=""><i class="ti-widgetized blue lighten-3"></i> 未割当一覧</a></li>
                 <li><a class="waves-effect" href="{% url 'authority' %}" title=""><i class="ti-email green lighten-3"></i> ユーザ権限</a></li>
@@ -93,15 +92,12 @@
 <script src="{% static 'delight/js/enscroll-0.5.2.min.js' %}"></script>
 <script src="{% static 'delight/js/animate-headline.js' %}"></script>
 <script src="{% static 'delight/js/slick.min.js' %}"></script>
-{#<script src="{% static 'delight/js/datatables.js' %}"></script>#}
 
 {% block tour-js %}{% endblock %}
-
 {% block index-modal %}{% endblock %}
 
 <script src="{% static 'delight/js/script.js' %}" type="text/javascript"></script>
 <script src="{% static 'delight/js/isotope.js' %}"></script>
-
 <script src="{% static 'delight/js/step-form.js' %}"></script>
 
 </body>

@@ -27,6 +27,10 @@ def unassigned(request):
     return render(request, 'unassigned.html')
 
 
+def unassigned_detail(request):
+    return render(request, 'unassigned_detail.html')
+
+
 def authority(request):
     return render(request, 'authority.html')
 
@@ -41,4 +45,9 @@ def tour(request):
 
 def customer_detail(request):
     return render(request, 'customer_detail.html')
+
+
+def customer_detail_tour(request):
+    return render(request, 'customer_detail_tour.html')
+
 
