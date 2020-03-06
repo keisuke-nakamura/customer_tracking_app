@@ -31,12 +31,28 @@ def unassigned_detail(request):
     return render(request, 'unassigned_detail.html')
 
 
+def unassigned_tour(request):
+    return render(request, 'unassigned_tour.html')
+
+
+def unassigned_detail_tour(request):
+    return render(request, 'unassigned_detail_tour.html')
+
+
 def authority(request):
     return render(request, 'authority.html')
 
 
 def authority_tour(request):
     return render(request, 'authority_tour.html')
+
+
+def account(request):
+    return render(request, 'account.html')
+
+
+def account_tour(request):
+    return render(request, 'account_tour.html')
 
 
 def tour(request):

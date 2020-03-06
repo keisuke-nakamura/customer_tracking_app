@@ -1,7 +1,7 @@
 {% extends "default.html" %}
 
-{% block tour %}
-    <li><a href="{% url 'unassigned' %}">Page Tour</a></li>
+{% block howtouse %}
+    <a href="{% url 'unassigned_tour' %}" title="" class="launch-btn"><i class="ti-view-list-alt red-text"></i> <span>HowToUse</span></a>
 {% endblock %}
 
 {% block body %}
@@ -25,9 +25,9 @@
                         <th>#</th>
                         <th>Name</th>
                         <th>PremiseName</th>
-                        <th>MailAddress</th>
+                        <th>Media</th>
+                        <th>PhoneNumber</th>
                         <th>Registered</th>
-                        <th>Charge</th>
                     </tr>
                     </thead>
                     <tbody>

@@ -205,7 +205,6 @@
                         </div><!-- Widget -->
                     </div>
 
-
                     <div class="col s6">
                         <div class="widget z-depth-1">
                             <div class="loader"></div>
@@ -233,17 +232,20 @@
                 </div>
             </div>
             <div class="button-set">
-                <button type="button" class="modal-action modal-close waves-effect waves-light btn-flat pink lighten-2 white-text">キャンセル</button>
+                <button id="cancel-button" type="button" class="modal-action modal-close waves-effect waves-light btn-flat pink lighten-2 white-text">キャンセル</button>
                 {#                <button type="button" class="modal-action modal-close waves-effect waves-light btn-flat red white-text delete-contact">追客停止</button>#}
-                <button type="button" class="modal-action modal-close waves-effect waves-light btn-flat green lighten-2 white-text save-contact">登録</button>
+                <button id="save-button" type="button" class="modal-action modal-close waves-effect waves-light btn-flat green lighten-2 white-text save-contact">登録</button>
                 {#                <button type="button" class="modal-action modal-close waves-effect waves-light btn-flat green lighten-2 white-text add-new-contact">Add</button>#}
             </div>
         </div>
     </div><!-- Content Area -->
 
-
 {% endblock %}
 
+{% block tour-js %}
+    <script src="{% static 'delight/js/impromptu.js' %}"></script>
+    <script src="{% static 'delight/js/tour-unassigned-detail.js' %}"></script>
+{% endblock %}
 
 
 

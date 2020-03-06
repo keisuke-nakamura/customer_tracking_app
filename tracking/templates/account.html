@@ -9,55 +9,73 @@
     <div class="content-area">
         <div class="breadcrumb-bar">
             <div class="page-title">
-                <h1>アカウント管理</h1>
-                <span>User Authority</span>
+                <h1>ユーザ一覧</h1>
+                <span>User List</span>
             </div>
 
-            <form class="search-admin waves-effect">
-                <input type="text" placeholder="Enter Keyword To Search..." />
-                <button><i class="ti-search"></i></button>
-            </form>
-
-            <ul class="admin-breadcrumb">
-                <li><a href="#" title="">Dashboard</a></li>
-                {#                <li><a href="#" title="">Pages</a></li>#}
-                <li>User Authority</li>
-            </ul>
         </div><!-- Breadcrumb Bar -->
 
         <div class="widgets-wrapper">
-            <div class="streaming-table">
-                <span id="found" class="label label-info"></span>
-                <table id="foo-table" class='table table-striped table-bordered'>
-                    <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>Name</th>
-                        <th>Kana</th>
-                        <th>Authority</th>
-                        <th>Mail</th>
-                        <th>Password</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr><td>1</td><td>会田 太郎</td><td>あいだたろう</td><td>支店長</td><td>xxxx@xxxx.co.jp</td><td>*********</td></tr>
-                    <tr><td>2</td><td>井上 二郎</td><td>いのうえじろう</td><td>一般</td><td>xxxx@gmail.com</td><td>*********</td></tr>
-                    <tr><td>3</td><td>植松 三郎</td><td>うえまつさぶろう</td><td>一般</td><td>xxxx@gmail.com</td><td>*********</td></tr>
-                    <tr><td>4</td><td>遠藤 史郎</td><td>えんどうしろう</td><td>一般</td><td>xxxx@fine-net.co.jp</td><td>*********</td></tr>
-                    <tr><td>5</td><td>恩田 五郎</td><td>おんだごろう</td><td>一般</td><td>xxxx@nifty.com</td><td>*********</td></tr>
-                    <tr><td>6</td><td>金子 六郎</td><td>かねころくろう</td><td>一般</td><td>xxxx@xxxx.co.jp</td><td>*********</td></tr>
-                    <tr><td>7</td><td>木田 七尾</td><td>きだななお</td><td>一般</td><td>xxxx@gmail.com</td><td>*********</td></tr>
-                    <tr><td>8</td><td>工藤 真一</td><td>くどうしんいち</td><td>一般</td><td>xxxx@fine-net.co.jp</td><td>*********</td></tr>
-                    <tr><td>9</td><td>毛塚 治虫</td><td>けづかおさむ</td><td>一般</td><td>xxxx@nifty.com</td><td>*********</td></tr>
-                    <tr><td>10</td><td>国宝 憲一</td><td>こくほうけんいち</td><td>一般</td><td>xxxx@xxxx.co.jp</td><td>*********</td></tr>
-                    <tr><td>47</td><td>竜堂 始</td><td>りゅうどうはじめ</td><td>管理者</td><td>xxxx@gmail.com</td><td>*********</td></tr>
-                    </tbody>
-                </table>
-                <div id="summary">
-                    <div>
+            <div class="row">
+                <div class="masonary">
+
+                    <div class="col s12">
+                        <div class="widget z-depth-1">
+                            <div class="loader"></div>
+                            <div class="widget-title">
+
+                                <a class="options dropdown-button waves-effect" href="#" title="" data-activates='dropdown10'><i class="ti-more-alt"></i></a>
+                                <ul id='dropdown10' class='dropdown-content'>
+                                    <li><a class="rld" href="#!" title="">Reload</a></li>
+                                    <li><a class="fl-scr" href="#!" title="">Full Screen</a></li>
+                                    <li><a class="rmv" href="#!" title="">Remove</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="live-search">
+                                <input id="search" name="search" placeholder="検索フォーム" type="text" data-list=".default_list" autocomplete="off">
+                                <ul class="default_list contacts-list scroll">
+                                    <li>
+                                        <a href="#contactEditUser" title="" class="contact-info" data-number="+1-202-555-0102">
+                                            <span class="info-img"><img src="images/contact1.jpg" alt=""></span>
+                                            <span class="info-detail"><i class="cnt-name">管理者　太郎</i><i class="mail-id">管理者</i></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#contactEditUser" title="" class="contact-info" data-number="+1-202-555-0102">
+                                            <span class="info-img"><img src="images/contact2.jpg" alt=""></span>
+                                            <span class="info-detail"><i class="cnt-name">店長　二郎</i><i class="mail-id">店長</i></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#contactEditUser" title="" class="contact-info" data-number="+1-202-555-0102">
+                                            <span class="info-img"><img src="images/contact3.jpg" alt=""></span>
+                                            <span class="info-detail"><i class="cnt-name">一般　三郎</i><i class="mail-id">一般</i></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#contactEditUser" title="" class="contact-info" data-number="+1-202-555-0102">
+                                            <span class="info-img"><img src="images/contact4.jpg" alt=""></span>
+                                            <span class="info-detail"><i class="cnt-name">社亜 亜図嬲</i><i class="mail-id">店長</i></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#contactEditUser" title="" class="contact-info" data-number="+1-202-555-0102">
+                                            <span class="info-img"><img src="images/contact5.jpg" alt=""></span>
+                                            <span class="info-detail"><i class="cnt-name">安室 令</i><i class="mail-id">一般</i></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="more-contacts">
+                                    <a href="#contactEditUser" title="" class="btn-floating btn-large waves-effect waves-light red add-contact"><i class="ti-plus"></i></a>
+                                    <a href="#" title="">View More</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </div><!-- Content Area -->
 
@@ -66,7 +84,7 @@
             <div class="contact-header blue">
                 <h4>Edit Contact</h4>
                 <div class="contact-img">
-                    <label for="file-input"><img src="http://placehold.it/128x128" alt="" /></label>
+                    <label for="file-input"><img src="images/contact1.jpg" alt="" /></label>
                     <input id="file-input" type="file">
                 </div>
                 <strong class="contact-name"></strong>
