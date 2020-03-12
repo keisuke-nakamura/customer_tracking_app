@@ -1,6 +1,10 @@
 from django.shortcuts import render, redirect
-from django.http import HttpResponse, HttpResponseRedirect
+from django.views import generic
+from django_datatables_view.base_datatable_view import BaseDatatableView
+from django.http import Http404
 from django.urls import reverse
+
+from .models import PotentialCustomers, TPremise, Media
 
 
 def login(request):
@@ -8,7 +12,10 @@ def login(request):
 
 
 def index(request):
-    return render(request, 'index.html')
+    potential_customers = PotentialCustomers.objects.select_related('int_media').select_related('int_information_premise').order_by('id')
+
+    context = {'potential_customers': potential_customers}
+    return render(request, 'index.html', context)
 
 
 def index_tour(request):
@@ -59,8 +66,15 @@ def tour(request):
     return render(request, 'tour.html')
 
 
-def customer_detail(request):
-    return render(request, 'customer_detail.html')
+def customer_detail(request, potential_customer_id):
+
+    try:
+        potential_customer = PotentialCustomers.objects.get(pk=potential_customer_id)
+    except PotentialCustomers.DoesNotExist:
+        raise Http404("customer does not exist")
+
+    potential_customer = {'potential_customer': potential_customer}
+    return render(request, 'customer_detail.html', potential_customer)
 
 
 def customer_detail_tour(request):

@@ -76,9 +76,34 @@ WSGI_APPLICATION = 'customer_tracking_app.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+        'ENGINE': 'django.db.backends.postgresql',
+        'HOST': '10.0.0.170',
+        'PORT': '',
+        'NAME': 'tsweb',
+        'USER': 'postgres',
+        'PASSWORD': '',
+        'OPTIONS': {
+            'options': '-c search_path=tracking_schema'
+        },
+    },
+    'tsweb': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'HOST': '10.0.0.170',
+        'PORT': '',
+        'NAME': 'tsweb',
+        'USER': 'postgres',
+        'PASSWORD': '',
+    },
+    # 既存DBのmodel作成用
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.postgresql',
+    #     'HOST': 'localhost',
+    #     'PORT': '5433',
+    #     'NAME': 'tsweb',
+    #     'USER': 'postgres',
+    #     'PASSWORD': 'fnt6789',
+    # },
+
 }
 
 
@@ -104,9 +129,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ja'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Tokyo'
 
 USE_I18N = True
 

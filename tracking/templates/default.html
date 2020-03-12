@@ -45,7 +45,7 @@
             <div class="launcher-dropdown z-depth-2">
                 <a href="#" title="" class="launch-btn"><i class="ti-panel cyan-text"></i> <span>empty</span></a>
                 {% block howtouse %}{% endblock %}
-                <a href="#" title="" class="launch-btn"><i class="ti-lock orange-text"></i> <span>Sign Out</span></a>
+                <a href="{% url 'login' %}" title="" class="launch-btn"><i class="ti-lock orange-text"></i> <span>Sign Out</span></a>
             </div>
         </div><!-- Launcher -->
     </div><!-- Topbar Links -->
@@ -63,7 +63,7 @@
                     <li><a href="#!">Busy</a></li>
                     <li><a href="#!">Away</a></li>
                     <li class="divider"></li>
-                    <li><a href="login.html">Signout</a></li>
+                    <li><a href="#!">Signout</a></li>
                 </ul>
             </div>
         </div><!-- Admin -->

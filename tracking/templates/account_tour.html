@@ -67,8 +67,8 @@
                                         </a>
                                     </li>
                                 </ul>
-                                <div class="more-contacts">
-                                    <a href="#contactEditUser" title="" class="btn-floating btn-large waves-effect waves-light red add-contact"><i class="ti-plus"></i></a>
+                                <div class="more-contacts" >
+                                    <a href="#contactEditUser" title="" class="btn-floating btn-large waves-effect waves-light red add-contact" id="add-button"><i class="ti-plus"></i></a>
                                     <a href="#" title="">View More</a>
                                 </div>
                             </div>
@@ -85,7 +85,7 @@
             <div class="contact-header blue">
                 <h4>Edit Contact</h4>
                 <div class="contact-img">
-{#                    <label for="file-input"><img src="images/contact1.jpg" alt="" /></label>#}
+                    <label for="file-input"><img src="images/contact1.jpg" alt="" /></label>
                     <input id="file-input" type="file">
                 </div>
                 <strong class="contact-name"></strong>
@@ -133,4 +133,9 @@
             </div>
         </div>
     </div><!-- Modal Box  -->
+{% endblock %}
+
+{% block tour-js %}
+    <script src="{% static 'delight/js/impromptu.js' %}"></script>
+    <script src="{% static 'delight/js/tour-account.js' %}"></script>
 {% endblock %}

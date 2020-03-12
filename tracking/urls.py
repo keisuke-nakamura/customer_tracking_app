@@ -17,6 +17,6 @@ urlpatterns = [
     path('account/', views.account, name='account'),
     path('account_tour/', views.account_tour, name='account_tour'),
     path('tour/', views.tour, name='tour'),
-    path('customer_detail/', views.customer_detail, name='customer_detail'),
+    path('customer_detail/<int:potential_customer_id>', views.customer_detail, name='customer_detail'),
     path('customer_detail_tour/', views.customer_detail_tour, name='customer_detail_tour'),
 ]

@@ -844,10 +844,10 @@ ul.admin-breadcrumb li:last-child:before{display:none}
     top:0;
     width:100%;
 }
-.widget.bg.bg1:before{background-image:url("../images/bg1.jpg")}
-.widget.bg.bg2:before{background-image:url("../images/bg2.jpg")}
-.widget.bg.bg3:before{background-image:url("../images/bg3.jpg")}
-.widget.bg.bg4:before{background-image:url("../images/bg4.jpg")}
+/*.widget.bg.bg1:before{background-image:url("../images/bg1.jpg")}*/
+/*.widget.bg.bg2:before{background-image:url("../images/bg2.jpg")}*/
+/*.widget.bg.bg3:before{background-image:url("../images/bg3.jpg")}*/
+/*.widget.bg.bg4:before{background-image:url("../images/bg4.jpg")}*/
 .loader{
     background:rgba(255, 255, 255, 0.8);
     height:100%;
@@ -2868,7 +2868,7 @@ pre{
 }
 
 .login-page:before{
-    background:url("../images/bg3.jpg") no-repeat scroll 0 0 / cover transparent;
+    /*background:url("../images/bg3.jpg") no-repeat scroll 0 0 / cover transparent;*/
     content:"";
     height:100%;
     left:0;
