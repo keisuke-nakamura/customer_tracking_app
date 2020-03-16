@@ -9,8 +9,8 @@
     <div class="content-area">
         <div class="breadcrumb-bar">
             <div class="page-title">
-                <h1>見込み客</h1>
-                <span>customer detail</span>
+                <h1>見込客割り当て</h1>
+                <span>customer assign</span>
             </div>
 
         </div><!-- Breadcrumb Bar -->
@@ -35,18 +35,14 @@
                             </div>
                             <form class="col s12">
                                 <div class="row">
-                                    <div class="input-field col s6">
-                                        <input placeholder="姓" id="first_name" type="text" class="validate">
-                                        <label for="first_name">First Name</label>
-                                    </div>
-                                    <div class="input-field col s6">
-                                        <input placeholder="名" id="last_name" type="text" class="validate">
-                                        <label for="last_name">Last Name</label>
+                                    <div class="input-field col s12">
+                                        <input placeholder="名前" id="name" type="text" class="validate" value="{{ potential_customer.str_name }}">
+                                        <label for="name">First Name</label>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="input-field col s6">
-                                        <input placeholder="生年月日" id="birthday" type="text" class="validate">
+                                        <input placeholder="生年月日" id="birthday" type="text" class="validate" >
                                         <label for="birthday">birthday</label>
                                     </div>
                                     <div class="input-field col s6">
@@ -56,7 +52,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="input-field col s12">
-                                        <input placeholder="希望物件" id="premise" type="text" class="validate">
+                                        <input placeholder="希望物件" id="premise" type="text" class="validate" value="{{ potential_customer.int_information_premise.str_name }}">
                                         <label for="premise">premise</label>
                                     </div>
                                 </div>
@@ -174,6 +170,32 @@
                         </div><!-- Widget -->
                     </div>
 
+
+                    <div class="col s6">
+                        <div class="widget z-depth-1">
+                            <div class="loader"></div>
+                            <div class="widget-title">
+                                <h3>メモ</h3>
+                                <p>自由入力フォームテスト</p>
+                                <a class="options dropdown-button waves-effect" href="#" title="" data-activates='dropdown6'><i class="ti-more-alt"></i></a>
+                                <ul id='dropdown6' class='dropdown-content'>
+                                    <li><a class="rld" href="#!" title="">Reload</a></li>
+                                    <li><a class="fl-scr" href="#!" title="">Full Screen</a></li>
+                                    <li><a class="rmv" href="#!" title="">Remove</a></li>
+                                </ul>
+                            </div>
+                            <form class="col s12">
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                        <label for="textarea1">顧客メモ</label>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div><!-- Widget -->
+                    </div>
+
                     <div class="col s6">
                         <div class="widget z-depth-1">
                             <div class="loader"></div>
@@ -204,38 +226,12 @@
                             </form>
                         </div><!-- Widget -->
                     </div>
-
-
-                    <div class="col s6">
-                        <div class="widget z-depth-1">
-                            <div class="loader"></div>
-                            <div class="widget-title">
-                                <h3>メモ</h3>
-                                <p>自由入力フォームテスト</p>
-                                <a class="options dropdown-button waves-effect" href="#" title="" data-activates='dropdown6'><i class="ti-more-alt"></i></a>
-                                <ul id='dropdown6' class='dropdown-content'>
-                                    <li><a class="rld" href="#!" title="">Reload</a></li>
-                                    <li><a class="fl-scr" href="#!" title="">Full Screen</a></li>
-                                    <li><a class="rmv" href="#!" title="">Remove</a></li>
-                                </ul>
-                            </div>
-                            <form class="col s12">
-                                <div class="row">
-                                    <div class="input-field col s12">
-                                        <textarea id="textarea1" class="materialize-textarea"></textarea>
-                                        <label for="textarea1">顧客メモ</label>
-                                    </div>
-                                </div>
-                            </form>
-
-                        </div><!-- Widget -->
-                    </div>
                 </div>
             </div>
             <div class="button-set">
                 <button type="button" class="modal-action modal-close waves-effect waves-light btn-flat pink lighten-2 white-text">キャンセル</button>
-                {#                <button type="button" class="modal-action modal-close waves-effect waves-light btn-flat red white-text delete-contact">追客停止</button>#}
-                <button type="button" class="modal-action modal-close waves-effect waves-light btn-flat green lighten-2 white-text save-contact">登録</button>
+{#                <button type="button" class="modal-action modal-close waves-effect waves-light btn-flat red white-text delete-contact">追客停止</button>#}
+                <button type="button" class="modal-action modal-close waves-effect waves-light btn-flat green lighten-2 white-text save-contact">保存</button>
                 {#                <button type="button" class="modal-action modal-close waves-effect waves-light btn-flat green lighten-2 white-text add-new-contact">Add</button>#}
             </div>
         </div>

@@ -114,9 +114,9 @@ $(window).on("load",function(){
     function addNew(){
         $(".add-new-contact").on('click',function(){
             var name = $("#full_name").val();
-            var mail = $("#email_id").val();
-            var phone = $("#phone_number").val();
-            var img  = $(".modal .contact-header").find(".contact-img img").attr('src');
+            var mail = $("#user_id").val();
+            var phone = $("#password").val();
+            // var img  = $(".modal .contact-header").find(".contact-img img").attr('src');
 
             $(".contacts-list").append("<li> <a href='#contactEditUser' title='' class='contact-info' data-number='" + phone + "'> <span class='info-img'><img src='" + img + "' alt=''></span> <span class='info-detail'><i class='cnt-name'>" + name +"</i><i class='mail-id'>" + mail + "</i></span> </a> </li> ")
             editContact();

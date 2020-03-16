@@ -20,3 +20,4 @@ urlpatterns = [
     path('tracking/', include('tracking.urls')),
     path('admin/', admin.site.urls),
 ]
+

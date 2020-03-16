@@ -94,6 +94,26 @@ DATABASES = {
         'USER': 'postgres',
         'PASSWORD': '',
     },
+    # 芹田不動産 本番用
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.postgresql',
+    #     'HOST': '10.3.240.170',
+    #     'PORT': '',
+    #     'NAME': 'tsweb',
+    #     'USER': 'postgres',
+    #     'PASSWORD': '',
+    #     'OPTIONS': {
+    #         'options': '-c search_path=tracking_schema'
+    #     },
+    # },
+    # 'tsweb': {
+    #     'ENGINE': 'django.db.backends.postgresql',
+    #     'HOST': '10.3.240.1',
+    #     'PORT': '',
+    #     'NAME': 'tsweb',
+    #     'USER': 'postgres',
+    #     'PASSWORD': '',
+    # },
     # 既存DBのmodel作成用
     # 'default': {
     #     'ENGINE': 'django.db.backends.postgresql',
@@ -144,3 +164,32 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+if DEBUG:
+    INTERNAL_IPS = ('127.0.0.1',)
+    MIDDLEWARE += (
+        'debug_toolbar.middleware.DebugToolbarMiddleware',
+    )
+
+    INSTALLED_APPS += (
+        'debug_toolbar',
+    )
+    # 表示する内容
+    DEBUG_TOOLBAR_PANELS = [
+        'debug_toolbar.panels.versions.VersionsPanel',
+        'debug_toolbar.panels.timer.TimerPanel',
+        'debug_toolbar.panels.settings.SettingsPanel',
+        'debug_toolbar.panels.headers.HeadersPanel',
+        'debug_toolbar.panels.request.RequestPanel',
+        'debug_toolbar.panels.sql.SQLPanel',
+        'debug_toolbar.panels.staticfiles.StaticFilesPanel',
+        'debug_toolbar.panels.templates.TemplatesPanel',
+        'debug_toolbar.panels.cache.CachePanel',
+        'debug_toolbar.panels.signals.SignalsPanel',
+        'debug_toolbar.panels.logging.LoggingPanel',
+        'debug_toolbar.panels.redirects.RedirectsPanel',
+    ]
+
+    DEBUG_TOOLBAR_CONFIG = {
+        'INTERCEPT_REDIRECTS': False,
+    }

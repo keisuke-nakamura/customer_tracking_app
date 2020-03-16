@@ -34,19 +34,16 @@
                         <th>Registered</th>
                     </tr>
                     </thead>
-                    <tbody>
-                    <tr data-href="{% url 'customer_detail' %}" class="customer-table"><td>1</td><td>会田 太郎</td><td>メゾン平間</td><td>SUUMO</td><td>090-xxxx-xxxx</td><td>2019/02/09</td></tr>
-                    <tr data-href="{% url 'customer_detail' %}" class="customer-table"><td>2</td><td>井上 二郎</td><td>ルグラン301</td><td>HOME'S</td><td>090-xxxx-xxxx</td><td>2020/01/23</td></tr>
-                    <tr data-href="{% url 'customer_detail' %}" class="customer-table"><td>3</td><td>植松 三郎</td><td>エントランス中松</td><td>自社HP</td><td>090-xxxx-xxxx</td><td>2019/12/05</td></tr>
-                    <tr data-href="{% url 'customer_detail' %}" class="customer-table"><td>4</td><td>遠藤 史郎</td><td>ハイツカヤヌマ</td><td>SUUMO</td><td>090-xxxx-xxxx</td><td>2019/11/30</td></tr>
-                    <tr data-href="{% url 'customer_detail' %}" class="customer-table"><td>5</td><td>恩田 五郎</td><td>グランドール101</td><td>SUUMO</td><td>090-xxxx-xxxx</td><td>2020/01/24</td></tr>
-                    <tr data-href="{% url 'customer_detail' %}" class="customer-table"><td>6</td><td>金子 六郎</td><td>グランドール201</td><td>自社HP</td><td>090-xxxx-xxxx</td><td>2020/02/18</td></tr>
-                    <tr data-href="{% url 'customer_detail' %}" class="customer-table"><td>7</td><td>木田 七尾</td><td>ラビングパレス</td><td>SUUMO</td><td>090-xxxx-xxxx</td><td>2020/03/05</td></tr>
-                    <tr data-href="{% url 'customer_detail' %}" class="customer-table"><td>8</td><td>工藤 真一</td><td>恵比寿ガーデンプレイス</td><td>自社HP</td><td>090-xxxx-xxxx</td><td>2019/10/29</td></tr>
-                    <tr data-href="{% url 'customer_detail' %}" class="customer-table"><td>9</td><td>毛塚 治虫</td><td>長野駅徒歩2分</td><td>HOME'S</td><td>090-xxxx-xxxx</td><td>2019/08/15</td></tr>
-                    <tr data-href="{% url 'customer_detail' %}" class="customer-table"><td>10</td><td>国宝 憲一</td><td>mannish202</td><td>HOME'S</td><td>090-xxxx-xxxx</td><td>2020/01/16</td></tr>
-                    <tr data-href="{% url 'customer_detail' %}" class="customer-table"><td>47</td><td>竜堂 始</td><td>パレス桑名</td><td>HOME'S</td><td>090-xxxx-xxxx</td><td>2020/03/28</td></tr>
-                    </tbody>
+                    {% for potential_customer in potential_customers %}
+                        <tr data-href="{% url 'customer_detail' potential_customer.id %}" class="customer-table">
+                            <td>{{ potential_customer.id }}</td>
+                            <td>{{ potential_customer.str_name }}</td>
+                            <td>{{ potential_customer.int_information_premise.str_name }}</td>
+                            <td>{{ potential_customer.int_media.str_media }}</td>
+                            <td>{{ potential_customer.str_tel }}</td>
+                            <td>{{ potential_customer.dat_created_at }}</td>
+                        </tr>
+                    {% endfor %}
                 </table>
                 <div id="summary">
                     <div>

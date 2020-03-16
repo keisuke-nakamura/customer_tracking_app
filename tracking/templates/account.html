@@ -6,6 +6,7 @@
 
 
 {% block body %}
+
     {% load static %}
     <div class="content-area">
         <div class="breadcrumb-bar">
@@ -15,7 +16,6 @@
             </div>
 
         </div><!-- Breadcrumb Bar -->
-
         <div class="widgets-wrapper">
             <div class="row">
                 <div class="masonary">
@@ -32,44 +32,21 @@
                                     <li><a class="rmv" href="#!" title="">Remove</a></li>
                                 </ul>
                             </div>
-
                             <div class="live-search">
-                                <input id="search" name="search" placeholder="検索フォーム" type="text" data-list=".default_list" autocomplete="off">
-                                <ul class="default_list contacts-list scroll">
-                                    <li>
-                                        <a href="#contactEditUser" title="" class="contact-info" data-number="+1-202-555-0102">
+
+                                <ul class="list-group">
+                                    {% for user in users %}
+                                        <li>
+                                            <a href="#contactEditUser" title="" class="contact-info" data-number="+1-202-555-0102">
 {#                                            <span class="info-img"><img src="images/contact1.jpg" alt=""></span>#}
-                                            <span class="info-detail"><i class="cnt-name">管理者　太郎</i><i class="mail-id">管理者</i></span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#contactEditUser" title="" class="contact-info" data-number="+1-202-555-0102">
-{#                                            <span class="info-img"><img src="images/contact2.jpg" alt=""></span>#}
-                                            <span class="info-detail"><i class="cnt-name">店長　二郎</i><i class="mail-id">店長</i></span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#contactEditUser" title="" class="contact-info" data-number="+1-202-555-0102">
-{#                                            <span class="info-img"><img src="images/contact3.jpg" alt=""></span>#}
-                                            <span class="info-detail"><i class="cnt-name">一般　三郎</i><i class="mail-id">一般</i></span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#contactEditUser" title="" class="contact-info" data-number="+1-202-555-0102">
-{#                                            <span class="info-img"><img src="images/contact4.jpg" alt=""></span>#}
-                                            <span class="info-detail"><i class="cnt-name">社亜 亜図嬲</i><i class="mail-id">店長</i></span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#contactEditUser" title="" class="contact-info" data-number="+1-202-555-0102">
-{#                                            <span class="info-img"><img src="images/contact5.jpg" alt=""></span>#}
-                                            <span class="info-detail"><i class="cnt-name">安室 令</i><i class="mail-id">一般</i></span>
-                                        </a>
-                                    </li>
+                                                <span class="info-detail"><i class="cnt-name">{{ user.int_user.int_dealer.int_name.str_name }}</i><i id="str_auth">{{ user.int_auth.str_auth }}</i></span>
+                                            </a>
+                                        </li>
+                                    {% endfor %}
                                 </ul>
                                 <div class="more-contacts">
                                     <a href="#contactEditUser" title="" class="btn-floating btn-large waves-effect waves-light red add-contact"><i class="ti-plus"></i></a>
-                                    <a href="#" title="">View More</a>
+{#                                    <a href="#" title=""></a>#}
                                 </div>
                             </div>
                         </div>
@@ -91,16 +68,13 @@
                 <strong class="contact-name"></strong>
                 <div class="contact-groups">
                     <div class="check-field">
-                        <input type="checkbox" class="filled-in" id="family" checked="checked" /> <label for="family">Family</label>
+                        <input type="checkbox" class="filled-in" id="member" /> <label for="member">一般</label>
                     </div>
                     <div class="check-field">
-                        <input type="checkbox" class="filled-in" id="friends" /> <label for="friends">Friends</label>
+                        <input type="checkbox" class="filled-in" id="leader" /> <label for="leader">店長</label>
                     </div>
                     <div class="check-field">
-                        <input type="checkbox" class="filled-in" id="work"  /> <label for="work">Work</label>
-                    </div>
-                    <div class="check-field">
-                        <input type="checkbox" class="filled-in" id="others"  /> <label for="others">Others</label>
+                        <input type="checkbox" class="filled-in" id="manager"  /> <label for="manager">管理者</label>
                     </div>
                 </div>
             </div><!-- Contact Header -->

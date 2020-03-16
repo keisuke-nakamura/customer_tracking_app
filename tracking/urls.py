@@ -1,4 +1,7 @@
 from django.urls import path
+from django.conf import settings
+from django.conf.urls import url, include
+from django.contrib import admin
 
 from . import views
 
@@ -20,3 +23,9 @@ urlpatterns = [
     path('customer_detail/<int:potential_customer_id>', views.customer_detail, name='customer_detail'),
     path('customer_detail_tour/', views.customer_detail_tour, name='customer_detail_tour'),
 ]
+
+if settings.DEBUG:
+    import debug_toolbar
+    urlpatterns += (
+        url(r'^your_app/', include(debug_toolbar.urls)),
+    )
