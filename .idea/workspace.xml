@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6dd0b3b2-4a6f-4a3b-9282-1b24fb886ef3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tracking/migrations/0002_potentialcustomers_bol_assigned.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tracking/migrations/0003_tdealer_tnamelist_tuser.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tracking/migrations/0004_authority_ulauthority.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tracking/migrations/0005_auto_20200316_1237.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customer_tracking_app/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/customer_tracking_app/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer_tracking_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/customer_tracking_app/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/tracking/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/delight/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/tracking/static/delight/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/templates/account.html" beforeDir="false" afterPath="$PROJECT_DIR$/tracking/templates/account.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/templates/customer_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/tracking/templates/customer_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/templates/index_tour.html" beforeDir="false" afterPath="$PROJECT_DIR$/tracking/templates/index_tour.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/templates/unassigned.html" beforeDir="false" afterPath="$PROJECT_DIR$/tracking/templates/unassigned.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/templates/unassigned_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/tracking/templates/unassigned_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/tracking/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/tracking/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +124,7 @@
       <workItem from="1583828397630" duration="6244000" />
       <workItem from="1583893976535" duration="1689000" />
       <workItem from="1583896226651" duration="34434000" />
-      <workItem from="1584087440170" duration="27264000" />
+      <workItem from="1584087440170" duration="27877000" />
     </task>
     <servers />
   </component>
