@@ -1,7 +1,7 @@
 {% extends "default.html" %}
 
 {% block howtouse %}
-    <a href="{% url 'customer_detail_tour' %}" title="" class="launch-btn"><i class="ti-view-list-alt red-text"></i> <span>HowToUse</span></a>
+    <a href="{% url 'customer_detail_tour' potential_customer.id %}" title="" class="launch-btn"><i class="ti-view-list-alt red-text"></i> <span>HowToUse</span></a>
 {% endblock %}
 
 {% block body %}
@@ -35,13 +35,9 @@
                             </div>
                             <form class="col s12">
                                 <div class="row">
-                                    <div class="input-field col s6">
-                                        <input placeholder="姓" id="first_name" type="text" class="validate">
-                                        <label for="first_name">First Name</label>
-                                    </div>
-                                    <div class="input-field col s6">
-                                        <input placeholder="名" id="last_name" type="text" class="validate">
-                                        <label for="last_name">Last Name</label>
+                                    <div class="input-field col s12">
+                                        <input placeholder="名前" id="name" type="text" class="validate" value="{{ potential_customer.str_name }}">
+                                        <label for="name">Name</label>
                                     </div>
                                 </div>
                                 <div class="row">

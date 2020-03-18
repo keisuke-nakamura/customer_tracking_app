@@ -1,11 +1,12 @@
 {% extends "default.html" %}
 
 {% block howtouse %}
-    <a href="{% url 'customer_detail_tour' %}" title="" class="launch-btn"><i class="ti-view-list-alt red-text"></i> <span>HowToUse</span></a>
+    <a href="{% url 'customer_detail_tour' potential_customer.id %}" title="" class="launch-btn"><i class="ti-view-list-alt red-text"></i> <span>HowToUse</span></a>
 {% endblock %}
 
 {% block body %}
     {% load static %}
+potential_customer.id
     <div class="content-area">
         <div class="breadcrumb-bar">
             <div class="page-title">

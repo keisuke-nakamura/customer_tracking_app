@@ -43,9 +43,15 @@ def customer_detail(request, potential_customer_id):
     return render(request, 'customer_detail.html', context)
 
 
-def customer_detail_tour(request):
-    return render(request, 'customer_detail_tour.html')
-
+def customer_detail_tour(request, potential_customer_id):
+    try:
+        potential_customer = PotentialCustomers.objects.select_related('int_information_premise').get(
+            pk=potential_customer_id)
+    except PotentialCustomers.DoesNotExist:
+        raise Http404("customer does not exist")
+    context = {'potential_customer': potential_customer}
+    return render(request, 'customer_detail_tour.html', context)
+    # return render(request)
 
 def registration(request):
     return render(request, 'customer_registration.html')
