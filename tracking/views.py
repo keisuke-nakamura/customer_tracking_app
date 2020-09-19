@@ -1,12 +1,10 @@
-from django.shortcuts import render, redirect
-from django.views import generic
-from django_datatables_view.base_datatable_view import BaseDatatableView
 from django.http import Http404
-from django.urls import reverse
-from django.db.models import Prefetch
-import itertools
+from django.shortcuts import render
 
-from .models import PotentialCustomers, TPremise, Media, TNameList, TUser, TDealer, Authority, UlAuthority
+from .models import PotentialCustomers, TUser, Authority
+
+
+# from django.db.models import Prefetch
 
 
 # ログイン
@@ -52,6 +50,7 @@ def customer_detail_tour(request, potential_customer_id):
     context = {'potential_customer': potential_customer}
     return render(request, 'customer_detail_tour.html', context)
     # return render(request)
+
 
 def registration(request):
     return render(request, 'customer_registration.html')
@@ -108,7 +107,6 @@ def authority_tour(request):
 def account(request):
     try:
         users = Authority.objects.select_related('int_user', 'int_auth', 'int_user__int_dealer__int_name').order_by('int_user')
-
     except TUser.DoesNotExist:
         raise Http404("user does not exists")
     context = {'users': users}
@@ -116,7 +114,13 @@ def account(request):
 
 
 def account_tour(request):
-    return render(request, 'account_tour.html')
+    try:
+        users = Authority.objects.select_related('int_user', 'int_auth', 'int_user__int_dealer__int_name').order_by('int_user')
+
+    except TUser.DoesNotExist:
+        raise Http404("user does not exists")
+    context = {'users': users}
+    return render(request, 'account_tour.html', context)
 
 
 def tour(request):

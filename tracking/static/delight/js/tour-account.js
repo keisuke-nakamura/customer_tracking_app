@@ -34,7 +34,7 @@ var tourSubmitFunc = function(e,v,m,f){
 			html: '登録済みのユーザ一覧です。クリックするとユーザ情報を変更・削除できます。',
 			buttons: { 前に戻る: -1, 次に進む: 1 },
 			focus: 1,
-			position: { container: '#search', x:0, y:0, width: 300, arrow: 'rt' },
+			position: { container: '.live-search', x:120, y:0, width: 300, arrow: 'rt' },
 			submit: tourSubmitFunc
 		},
 

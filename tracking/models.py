@@ -250,7 +250,7 @@ class TUnit(models.Model):
 
     class Meta:
         managed = False
-        db_table = 't_unit'
+        db_table = u'"public\".\"t_unit"'
 
 
 class TNameList(models.Model):
@@ -489,6 +489,36 @@ class TlYubin(models.Model):
         db_table = 'tl_yubin'
 
 
+class TRentalFeeDetail(models.Model):
+    int_rental_fee_detail_id = models.AutoField(primary_key=True)
+    int_unit_id = models.IntegerField()
+    int_detail_group_id = models.IntegerField()
+    int_detail_type_id = models.IntegerField()
+    int_detail_item_id = models.IntegerField()
+    bol_taxable_flg = models.BooleanField(blank=True, null=True)
+    flt_month_minute = models.FloatField(blank=True, null=True)
+    int_amount = models.IntegerField(blank=True, null=True)
+    int_tax = models.IntegerField(blank=True, null=True)
+    int_amount_with_tax = models.IntegerField(blank=True, null=True)
+    int_fee_cycle = models.IntegerField(blank=True, null=True)
+    int_period_from = models.IntegerField(blank=True, null=True)
+    int_period_to = models.IntegerField(blank=True, null=True)
+    int_payee_account_id = models.IntegerField(blank=True, null=True)
+    bol_bring_flg = models.BooleanField(blank=True, null=True)
+    bol_management_consignment_obj_flg = models.BooleanField(blank=True, null=True)
+    int_management_consignment_calc_type = models.IntegerField(blank=True, null=True)
+    int_period_start_month = models.IntegerField(blank=True, null=True)
+    bol_reward_flg = models.BooleanField(blank=True, null=True)
+    bol_include_administrative_flg = models.BooleanField(blank=True, null=True)
+    bol_include_parking_flg = models.BooleanField(blank=True, null=True)
+    int_vat_type = models.IntegerField()
+    bol_actual_cost = models.BooleanField(blank=True, null=True)
+
+    class Meta:
+        managed = False
+        db_table = u'"public\".\"t_rental_fee_detail"'
+
+
 # tracking_schema
 # ユーザ権限マスタ
 class UlAuthority(models.Model):
@@ -548,5 +578,20 @@ class PotentialCustomers(models.Model):
     int_train = models.IntegerField(default=0, null=True)
     int_station = models.IntegerField(default=0, null=True)
     bol_assigned = models.BooleanField(default=False)
+    dat_created_at = models.DateTimeField('date created')
+    dat_updated_at = models.DateTimeField('date updated')
+
+
+class TempCustomers(models.Model):
+    str_user_name = models.CharField(max_length=100)
+    str_user_kana = models.CharField(max_length=100, null=True)
+    str_user_mail = models.CharField(max_length=100, null=True, unique=True)
+    str_user_tel = models.CharField(max_length=100, null=True)
+    str_user_fax = models.CharField(max_length=100, null=True)
+    str_user_contact = models.TextField(null=True)
+    str_user_inquiry_detail = models.TextField(null=True)
+    int_user_media = models.IntegerField(null=False)
+    int_unit = models.ForeignKey(TUnit, on_delete=models.SET_DEFAULT, default='')
+
     dat_created_at = models.DateTimeField('date created')
     dat_updated_at = models.DateTimeField('date updated')

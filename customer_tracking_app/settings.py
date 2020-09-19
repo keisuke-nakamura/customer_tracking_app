@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'tracking.apps.TrackingConfig',
+    'django_extensions',
 ]
 
 MIDDLEWARE = [
@@ -97,7 +98,7 @@ DATABASES = {
     # 芹田不動産 本番用
     # 'default': {
     #     'ENGINE': 'django.db.backends.postgresql',
-    #     'HOST': '10.3.240.170',
+    #     'HOST': '10.3.240.1',
     #     'PORT': '',
     #     'NAME': 'tsweb',
     #     'USER': 'postgres',

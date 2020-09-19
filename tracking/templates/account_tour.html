@@ -6,6 +6,7 @@
 
 
 {% block body %}
+
     {% load static %}
     <div class="content-area">
         <div class="breadcrumb-bar">
@@ -15,7 +16,6 @@
             </div>
 
         </div><!-- Breadcrumb Bar -->
-
         <div class="widgets-wrapper">
             <div class="row">
                 <div class="masonary">
@@ -32,44 +32,21 @@
                                     <li><a class="rmv" href="#!" title="">Remove</a></li>
                                 </ul>
                             </div>
-
                             <div class="live-search">
-                                <input id="search" name="search" placeholder="検索フォーム" type="text" data-list=".default_list" autocomplete="off">
-                                <ul class="default_list contacts-list scroll">
-                                    <li>
-                                        <a href="#contactEditUser" title="" class="contact-info" data-number="+1-202-555-0102">
-{#                                            <span class="info-img"><img src="images/contact1.jpg" alt=""></span>#}
-                                            <span class="info-detail"><i class="cnt-name">管理者　太郎</i><i class="mail-id">管理者</i></span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#contactEditUser" title="" class="contact-info" data-number="+1-202-555-0102">
-{#                                            <span class="info-img"><img src="images/contact2.jpg" alt=""></span>#}
-                                            <span class="info-detail"><i class="cnt-name">店長　二郎</i><i class="mail-id">店長</i></span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#contactEditUser" title="" class="contact-info" data-number="+1-202-555-0102">
-{#                                            <span class="info-img"><img src="images/contact3.jpg" alt=""></span>#}
-                                            <span class="info-detail"><i class="cnt-name">一般　三郎</i><i class="mail-id">一般</i></span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#contactEditUser" title="" class="contact-info" data-number="+1-202-555-0102">
-{#                                            <span class="info-img"><img src="images/contact4.jpg" alt=""></span>#}
-                                            <span class="info-detail"><i class="cnt-name">社亜 亜図嬲</i><i class="mail-id">店長</i></span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#contactEditUser" title="" class="contact-info" data-number="+1-202-555-0102">
-{#                                            <span class="info-img"><img src="images/contact5.jpg" alt=""></span>#}
-                                            <span class="info-detail"><i class="cnt-name">安室 令</i><i class="mail-id">一般</i></span>
-                                        </a>
-                                    </li>
+
+                                <ul class="list-group">
+                                    {% for user in users %}
+                                        <li>
+                                            <a href="#contactEditUser" title="" class="contact-info" data-number="{{ user.int_user_id }}">
+                                                {#                                            <span class="info-img"><img src="images/contact1.jpg" alt=""></span>#}
+                                                <span class="info-detail"><i class="cnt-name">{{ user.int_user.int_dealer.int_name.str_name }}</i><i id="str_auth">{{ user.int_auth.str_auth }}</i></span>
+                                            </a>
+                                        </li>
+                                    {% endfor %}
                                 </ul>
-                                <div class="more-contacts" >
-                                    <a href="#contactEditUser" title="" class="btn-floating btn-large waves-effect waves-light red add-contact" id="add-button"><i class="ti-plus"></i></a>
-                                    <a href="#" title="">View More</a>
+                                <div class="more-contacts">
+                                    <a href="#contactEditUser" title="" class="btn-floating btn-large waves-effect waves-light red add-contact"><i class="ti-plus"></i></a>
+                                    {#                                    <a href="#" title=""></a>#}
                                 </div>
                             </div>
                         </div>
@@ -83,44 +60,36 @@
     <div class="modal scroll" id="contactEditUser">
         <div class="modal-content">
             <div class="contact-header blue">
-                <h4>Edit Contact</h4>
+                <h4>ユーザ権限設定</h4>
                 <div class="contact-img">
-                    <label for="file-input"><img src="images/contact1.jpg" alt="" /></label>
+                    {#                    <label for="file-input"><img src="images/contact1.jpg" alt="" /></label>#}
                     <input id="file-input" type="file">
                 </div>
                 <strong class="contact-name"></strong>
                 <div class="contact-groups">
-                    <div class="check-field">
-                        <input type="checkbox" class="filled-in" id="family" checked="checked" /> <label for="family">Family</label>
-                    </div>
-                    <div class="check-field">
-                        <input type="checkbox" class="filled-in" id="friends" /> <label for="friends">Friends</label>
-                    </div>
-                    <div class="check-field">
-                        <input type="checkbox" class="filled-in" id="work"  /> <label for="work">Work</label>
-                    </div>
-                    <div class="check-field">
-                        <input type="checkbox" class="filled-in" id="others"  /> <label for="others">Others</label>
-                    </div>
+                    <p>
+                        <input name="group1" type="radio" id="member" />
+                        <label for="member"><span style="color: black; ">一般</span></label>
+                        <input name="group1" type="radio" id="leader" />
+                        <label for="leader"><span style="color: black; ">店長</span></label>
+                        <input class="with-gap" name="group1" type="radio" id="manager"  />
+                        <label for="manager"><span style="color: black; ">管理者</span></label>
+                    </p>
                 </div>
             </div><!-- Contact Header -->
 
             <div class="contact-body">
                 <form>
                     <div class="input-field">
-                        <label for="full_name">Full Name</label>
+                        <label for="full_name">氏名</label>
                         <input id="full_name" class="validate" type="text" value="Name" />
                     </div>
                     <div class="input-field">
-                        <label for="email_id">Email Address</label>
-                        <input id="email_id" class="validate" type="email" value="Email" />
-                    </div>
-                    <div class="input-field">
-                        <label for="phone_number">Phone Number</label>
+                        <label for="phone_number">ユーザID</label>
                         <input id="phone_number" class="validate" type="text" value="Phone" />
                     </div>
                     <div class="input-field">
-                        <label for="add">Address</label>
+                        <label for="add">パスワード</label>
                         <input id="add" class="validate" type="text" value="" />
                     </div>
                     <div class="button-set">
