@@ -3,9 +3,9 @@
 {% block howtouse %}
     <a href="{% url 'customer_detail_tour' potential_customer.id %}" title="" class="launch-btn"><i class="ti-view-list-alt red-text"></i> <span>HowToUse</span></a>
 {% endblock %}
-
 {% block body %}
     {% load static %}
+    potential_customer.id
     <div class="content-area">
         <div class="breadcrumb-bar">
             <div class="page-title">
@@ -18,7 +18,6 @@
         <div class="widgets-wrapper">
             <div class="row">
                 <div class="masonary">
-
                     <div class="col s6">
                         <div class="widget z-depth-1">
                             <div class="loader"></div>
@@ -26,7 +25,8 @@
                             <div class="widget-title">
                                 <h3>顧客情報</h3>
                                 <p> フォームテスト</p>
-                                <a class="options dropdown-button waves-effect" href="#" title="" data-activates='dropdown'><i class="ti-more-alt"></i></a>
+                                <a class="options dropdown-button waves-effect" href="#" title=""
+                                   data-activates='dropdown'><i class="ti-more-alt"></i></a>
                                 <ul id='dropdown' class='dropdown-content'>
                                     <li><a class="rld" href="#!" title="">Reload</a></li>
                                     <li><a class="fl-scr" href="#!" title="">Full Screen</a></li>
@@ -36,8 +36,9 @@
                             <form class="col s12">
                                 <div class="row">
                                     <div class="input-field col s12">
-                                        <input placeholder="名前" id="name" type="text" class="validate" value="{{ potential_customer.str_name }}">
-                                        <label for="name">Name</label>
+                                        <input placeholder="名前" id="name" type="text" class="validate"
+                                               value="{{ potential_customer.str_name }}">
+                                        <label for="name">First Name</label>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -52,7 +53,8 @@
                                 </div>
                                 <div class="row">
                                     <div class="input-field col s12">
-                                        <input placeholder="希望物件" id="premise" type="text" class="validate">
+                                        <input placeholder="希望物件" id="premise" type="text" class="validate"
+                                               value="{{ potential_customer.int_information_premise.str_name }}">
                                         <label for="premise">premise</label>
                                     </div>
                                 </div>
@@ -69,7 +71,8 @@
                             <div class="widget-title">
                                 <h3>連絡先</h3>
                                 <p> アイコン付フォームテスト</p>
-                                <a class="options dropdown-button waves-effect" href="#" title="" data-activates='dropdown3'><i class="ti-more-alt"></i></a>
+                                <a class="options dropdown-button waves-effect" href="#" title=""
+                                   data-activates='dropdown3'><i class="ti-more-alt"></i></a>
                                 <ul id='dropdown3' class='dropdown-content'>
                                     <li><a class="rld" href="#!" title="">Reload</a></li>
                                     <li><a class="fl-scr" href="#!" title="">Full Screen</a></li>
@@ -99,7 +102,8 @@
                             <div class="widget-title">
                                 <h3>媒体等</h3>
                                 <p>セレクトボックステスト</p>
-                                <a class="options dropdown-button waves-effect" href="#" title="" data-activates='dropdown4'><i class="ti-more-alt"></i></a>
+                                <a class="options dropdown-button waves-effect" href="#" title=""
+                                   data-activates='dropdown4'><i class="ti-more-alt"></i></a>
                                 <ul id='dropdown4' class='dropdown-content'>
                                     <li><a class="rld" href="#!" title="">Reload</a></li>
                                     <li><a class="fl-scr" href="#!" title="">Full Screen</a></li>
@@ -141,10 +145,11 @@
                             <div class="widget-title">
                                 <h3>メール送信設定</h3>
                                 <p>ミックスフォームテスト</p>
-                                <a class="options dropdown-button waves-effect" href="#" title="" data-activates='dropdown4'><i class="ti-more-alt"></i></a>
+                                <a class="options dropdown-button waves-effect" href="#" title=""
+                                   data-activates='dropdown4'><i class="ti-more-alt"></i></a>
                                 <div class="input-field col s12">
                                     <p>
-                                        <input type="checkbox" id="indeterminate-checkbox" />
+                                        <input type="checkbox" id="indeterminate-checkbox"/>
                                         <label for="indeterminate-checkbox">メールを送信する</label>
                                     </p>
                                 </div>
@@ -165,47 +170,371 @@
                                     </div>
 
                                 </div>
-                            </form>
+                        </div>
+                        </form>
 
-                        </div><!-- Widget -->
-                    </div>
+                    </div><!-- Widget -->
+                </div>
 
-
-                    <div class="col s6">
-                        <div class="widget z-depth-1">
-                            <div class="loader"></div>
-                            <div class="widget-title">
-                                <h3>メモ</h3>
-                                <p>自由入力フォームテスト</p>
-                                <a class="options dropdown-button waves-effect" href="#" title="" data-activates='dropdown6'><i class="ti-more-alt"></i></a>
-                                <ul id='dropdown6' class='dropdown-content'>
-                                    <li><a class="rld" href="#!" title="">Reload</a></li>
-                                    <li><a class="fl-scr" href="#!" title="">Full Screen</a></li>
-                                    <li><a class="rmv" href="#!" title="">Remove</a></li>
-                                </ul>
-                            </div>
-                            <form class="col s12">
-                                <div class="row">
-                                    <div class="input-field col s12">
-                                        <textarea id="textarea1" class="materialize-textarea"></textarea>
-                                        <label for="textarea1">顧客メモ</label>
-                                    </div>
+                <div class="col s12">
+                    <div class="widget z-depth-1">
+                        <div class="loader"></div>
+                        <div class="widget-title">
+                            <h3>希望条件</h3>
+                            <p>顧客希望条件入力欄</p>
+                            <a class="options dropdown-button waves-effect" href="#" title=""
+                               data-activates='dropdown6'><i class="ti-more-alt"></i></a>
+                            <ul id='dropdown6' class='dropdown-content'>
+                                <li><a class="rld" href="#!" title="">Reload</a></li>
+                                <li><a class="fl-scr" href="#!" title="">Full Screen</a></li>
+                                <li><a class="rmv" href="#!" title="">Remove</a></li>
+                            </ul>
+                        </div>
+                        <form class="col s12">
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input placeholder="premise_name" id="name" type="text" class="validate"
+                                           value="">
+                                    <label>物件名</label>
                                 </div>
-                            </form>
+                            </div>
+                        </form><!-- Widget -->
+                        <form class="col s12">
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input placeholder="premise_address" id="name" type="text" class="validate"
+                                           value="">
+                                    <label>住所</label>
+                                </div>
+                            </div>
+                        </form><!-- Widget -->
+                        <div class="input-field col s12">
+                            <select>
+                                {#                                    <option value="" disabled selected>媒体</option>#}
+                                <option value="1" selected="selected">居住用</option>
+                                <option value="2">事業用</option>
+                                <option value="3">駐車場</option>
+                            </select>
+                            <label>用途</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <select multiple>
+                                <option value="" disabled selected>種別</option>
+                                <option value="1">アパート</option>
+                                <option value="2">マンション</option>
+                                <option value="3">一戸建て</option>
+                            </select>
+                            <label>物件種別</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <select multiple>
+                                <option value="" disabled selected>構造</option>
+                                <option value="1">鉄筋系</option>
+                                <option value="2">鉄骨系</option>
+                                <option value="3">木造</option>
+                                <option value="4">その他</option>
+                            </select>
+                            <label>物件構造</label>
+                        </div>
 
-                        </div><!-- Widget -->
+                        <div class="input-field col s2">
+                            <input placeholder="" id="birthday" type="text" class="validate">
+                            <label for="birthday">賃料下限（円）</label>
+                        </div>
+                        <div class="input-field col s2">
+                            <input placeholder="" id="gender" type="text" class="validate">
+                            <label for="gender">賃料上限（円）</label>
+                        </div>
+                        <div class="input-field col s8">
+                            <select multiple>
+                                <option value="" disabled selected>賃料条件</option>
+                                <option value="1">共益費含む</option>
+                                <option value="2">駐車料含む</option>
+                                <option value="3">敷金なし</option>
+                                <option value="4">礼金なし</option>
+                                <option value="3">更新料なし</option>
+                                <option value="4">更新手数料なし</option>
+                            </select>
+                            <label>その他賃料条件</label>
+                        </div>
+                        <div class="input-field col s2">
+                            <input placeholder="" id="birthday" type="text" class="validate">
+                            <label for="birthday">専有面積下限（㎡）</label>
+                        </div>
+                        <div class="input-field col s2">
+                            <input placeholder="" id="gender" type="text" class="validate">
+                            <label for="gender">専有面積上限（㎡）</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <select multiple>
+                                <option value="" disabled selected>間取り</option>
+                                <option value="1">ワンルーム</option>
+                                <option value="2">1K</option>
+                                <option value="3">1DK</option>
+                                <option value="4">1LDK</option>
+                                <option value="5">2K</option>
+                                <option value="6">2DK</option>
+                                <option value="7">2LDK</option>
+                                <option value="8">3K</option>
+                                <option value="9">3DK</option>
+                                <option value="10">3LDK</option>
+                                <option value="11">4K</option>
+                                <option value="12">4DK</option>
+                                <option value="13">4LDK以上</option>
+                            </select>
+                            <label>間取り条件</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <select>
+                                <option value="1" selected="selected">指定なし</option>
+                                <option value="2">新築</option>
+                                <option value="3">3年以内</option>
+                                <option value="4">5年以内</option>
+                                <option value="5">10年以内</option>
+                                <option value="6">15年以内</option>
+                                <option value="7">20年以内</option>
+                            </select>
+                            <label>築年数</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <select>
+                                <option value="1" selected="selected">指定なし</option>
+                                <option value="2">1分以内</option>
+                                <option value="3">5分以内</option>
+                                <option value="4">7分以内</option>
+                                <option value="5">10分以内</option>
+                                <option value="6">15分以内</option>
+                                <option value="7">20分以内</option>
+                            </select>
+                            <label>駅徒歩分</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <select>
+                                <option value="1" selected="selected">指定なし</option>
+                                <option value="2">○○線</option>
+                                <option value="3">××線</option>
+                                <option value="4">△△線</option>
+                            </select>
+                            <label>沿線1</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <select>
+                                <option value="1" selected="selected">指定なし</option>
+                                <option value="2">A駅</option>
+                                <option value="3">B駅</option>
+                                <option value="4">C駅</option>
+                                <option value="5">D駅</option>
+                                <option value="6">E駅</option>
+                                <option value="7">F駅</option>
+                            </select>
+                            <label>駅1</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <select>
+                                <option value="1" selected="selected">指定なし</option>
+                                <option value="2">○○線</option>
+                                <option value="3">××線</option>
+                                <option value="4">△△線</option>
+                            </select>
+                            <label>沿線2</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <select>
+                                <option value="1" selected="selected">指定なし</option>
+                                <option value="2">A駅</option>
+                                <option value="3">B駅</option>
+                                <option value="4">C駅</option>
+                                <option value="5">D駅</option>
+                                <option value="6">E駅</option>
+                                <option value="7">F駅</option>
+                            </select>
+                            <label>駅2</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <select>
+                                <option value="1" selected="selected">指定なし</option>
+                                <option value="2">○○線</option>
+                                <option value="3">××線</option>
+                                <option value="4">△△線</option>
+                            </select>
+                            <label>沿線3</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <select>
+                                <option value="1" selected="selected">指定なし</option>
+                                <option value="2">A駅</option>
+                                <option value="3">B駅</option>
+                                <option value="4">C駅</option>
+                                <option value="5">D駅</option>
+                                <option value="6">E駅</option>
+                                <option value="7">F駅</option>
+                            </select>
+                            <label>駅3</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <select multiple>
+                                <option value="" disabled selected>指定なし</option>
+                                <option value="1">飯山・長野</option>
+                                <option value="2">上田・佐久</option>
+                                <option value="3">大町・松本・木曽</option>
+                                <option value="4">諏訪・伊那・飯田</option>
+                            </select>
+                            <label>エリア</label>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="col s12">
+                    <div class="widget z-depth-1">
+                        <div class="loader"></div>
+                        <div class="widget-title">
+                            <h3>こだわり条件</h3>
+                            <p>詳細条件入力欄</p>
+                            <a class="options dropdown-button waves-effect" href="#" title=""
+                               data-activates='dropdown6'><i class="ti-more-alt"></i></a>
+                            <ul id='dropdown6' class='dropdown-content'>
+                                <li><a class="rld" href="#!" title="">Reload</a></li>
+                                <li><a class="fl-scr" href="#!" title="">Full Screen</a></li>
+                                <li><a class="rmv" href="#!" title="">Remove</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="input-field col s12">
+                            <select>
+                                <option value="1" selected="selected">指定なし</option>
+                                <option value="2">1階</option>
+                                <option value="3">2階以上</option>
+                                <option value="4">最上階</option>
+                                <option value="5">南向き</option>
+                                <option value="6">角部屋</option>
+                                {#                                <option value="7">20年以内</option>#}
+                            </select>
+                            <label>階数・位置</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <select multiple>
+                                <option value="" disabled selected>指定なし</option>
+                                <option value="1">ガスコンロ</option>
+                                <option value="2">IHコンロ</option>
+                                <option value="3">電気コンロ</option>
+                                <option value="4">コンロ2口以上</option>
+                                <option value="5">設置済み</option>
+                            </select>
+                            <label>キッチン</label>
+                        </div>
+
+                        <div class="input-field col s12">
+                            <select multiple>
+                                <option value="" disabled selected>指定なし</option>
+                                <option value="1">バス・トイレ別</option>
+                                <option value="2">3点ユニットバス</option>
+                                <option value="3">洗面化粧台</option>
+                                <option value="4">洗面所独立</option>
+                                <option value="5">浴室乾燥機</option>
+                                <option value="6">追炊き機能</option>
+                                <option value="7">共同</option>
+                            </select>
+                            <label>バス</label>
+                        </div>
+
+                        <div class="input-field col s12">
+                            <select multiple>
+                                <option value="" disabled selected>指定なし</option>
+                                <option value="1">シャワートイレ</option>
+                                <option value="2">共同</option>
+                            </select>
+                            <label>トイレ</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <select multiple>
+                                <option value="" disabled selected>指定なし</option>
+                                <option value="1">室内</option>
+                                <option value="2">室外</option>
+                            </select>
+                            <label>洗濯機置場</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <select multiple>
+                                <option value="" disabled selected>指定なし</option>
+                                <option value="1">オートロック</option>
+                                <option value="2">防犯カメラ</option>
+                                <option value="3">TVモニター付きインターホン</option>
+                                <option value="4">管理人常駐</option>
+                                <option value="5">24時間管理</option>
+                                <option value="6">宅配ボックス</option>
+                            </select>
+                            <label>セキュリティ</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <select multiple>
+                                <option value="" disabled selected>指定なし</option>
+                                <option value="1">インターネット接続</option>
+                                <option value="2">インターネット無料</option>
+                                <option value="3">BSアンテナ</option>
+                                <option value="4">CSアンテナ</option>
+                                <option value="5">CATV可</option>
+                            </select>
+                            <label>TV・インターネット</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <select multiple>
+                                <option value="" disabled selected>指定なし</option>
+                                <option value="1">都市ガス</option>
+                            </select>
+                            <label>ガス</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <select multiple>
+                                <option value="" disabled selected>指定なし</option>
+                                <option value="1">エレベーター</option>
+                                <option value="2">ゴミ置き場</option>
+                                <option value="3">コインランドリー</option>
+                                <option value="4">駐車場（敷地内）</option>
+                                <option value="5">駐車場（近隣）</option>
+                                <option value="6">バイク置場</option>
+                                <option value="7">駐輪場</option>
+                                <option value="8">オール電化</option>
+                                <option value="9">ロフト付き</option>
+                                <option value="10">分譲賃貸</option>
+                            </select>
+                            <label>その他設備</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <select multiple>
+                                <option value="" disabled selected>指定なし</option>
+                                <option value="1">学生限定</option>
+                                <option value="2">女性限定</option>
+                                <option value="3">男性限定</option>
+                                <option value="4">2人入居可</option>
+                                <option value="5">ペット相談</option>
+                                <option value="6">楽器相談</option>
+                                <option value="7">事務所可</option>
+                                <option value="8">外国人可</option>
+                            </select>
+                            <label>条件</label>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="button-set">
-                <button id="cancel-button" type="button" class="modal-action modal-close waves-effect waves-light btn-flat pink lighten-2 white-text">キャンセル</button>
-                <button id="stop-button" type="button" class="modal-action modal-close waves-effect waves-light btn-flat red white-text delete-contact">追客停止</button>
-                <button id="save-button" type="button" class="modal-action modal-close waves-effect waves-light btn-flat green lighten-2 white-text save-contact">保存</button>
+                <button type="button"
+                        class="modal-action modal-close waves-effect waves-light btn-flat pink lighten-2 white-text">
+                    キャンセル
+                </button>
+                <button type="button"
+                        class="modal-action modal-close waves-effect waves-light btn-flat red white-text delete-contact">
+                    追客停止
+                </button>
+                <button type="button"
+                        class="modal-action modal-close waves-effect waves-light btn-flat green lighten-2 white-text save-contact">
+                    保存
+                </button>
                 {#                <button type="button" class="modal-action modal-close waves-effect waves-light btn-flat green lighten-2 white-text add-new-contact">Add</button>#}
             </div>
         </div>
     </div><!-- Content Area -->
-
 
 {% endblock %}
 

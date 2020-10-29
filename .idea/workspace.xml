@@ -2,31 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6dd0b3b2-4a6f-4a3b-9282-1b24fb886ef3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/receive_mail.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tracking/migrations/0002_auto_20200623_1147.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tracking/migrations/0003_auto_20200623_1149.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tracking/migrations/0004_trentalfeedetail.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/customer_tracking_app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/customer_tracking_app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/receive_mail2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer_tracking_app/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/customer_tracking_app/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/tracking/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/migrations/0002_potentialcustomers_bol_assigned.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/migrations/0003_tdealer_tnamelist_tuser.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/migrations/0004_authority_ulauthority.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/migrations/0005_auto_20200316_1237.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/tracking/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/delight/css/materialize.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/tracking/static/delight/css/materialize.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/delight/js/slick.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/tracking/static/delight/js/slick.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/delight/js/step-form.js" beforeDir="false" afterPath="$PROJECT_DIR$/tracking/static/delight/js/step-form.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/static/delight/js/tour-account.js" beforeDir="false" afterPath="$PROJECT_DIR$/tracking/static/delight/js/tour-account.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/templates/account_tour.html" beforeDir="false" afterPath="$PROJECT_DIR$/tracking/templates/account_tour.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/receive_mail.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/receive_mail.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tracking/templates/customer_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/tracking/templates/customer_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/templates/default.html" beforeDir="false" afterPath="$PROJECT_DIR$/tracking/templates/default.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/tracking/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/templates/unassigned_tour.html" beforeDir="false" afterPath="$PROJECT_DIR$/tracking/templates/unassigned_tour.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracking/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/tracking/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tracking/templates/customer_detail_tour.html" beforeDir="false" afterPath="$PROJECT_DIR$/tracking/templates/customer_detail_tour.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,24 +66,25 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../pressance_csv/files" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/scripts" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\FNT\Desktop\TASK\nak's\customer_tracking_app\tracking\templates" />
-      <recent name="C:\Users\FNT\Desktop\TASK\nak's\customer_tracking_app\tracking\static\delight\js" />
-      <recent name="C:\Users\Ram\PycharmProjects\customer_tracking_app\tracking\static\mdb\css" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\FNT\Desktop\TASK\nak's\customer_tracking_app\tracking\static\bootstrap-select" />
       <recent name="C:\Users\FNT\Desktop\TASK\nak's\customer_tracking_app\tracking\static" />
       <recent name="C:\Users\FNT\Desktop\TASK\nak's\customer_tracking_app\tracking\static\delight\css" />
       <recent name="C:\Users\FNT\Desktop\TASK\nak's\customer_tracking_app\tracking\static\delight\js" />
       <recent name="C:\Users\Ram\PycharmProjects\customer_tracking_app\tracking\static" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\FNT\Desktop\TASK\nak's\customer_tracking_app\scripts" />
+      <recent name="C:\Users\FNT\Desktop\TASK\nak's\customer_tracking_app\tracking\templates" />
+      <recent name="C:\Users\FNT\Desktop\TASK\nak's\customer_tracking_app\tracking\static\delight\js" />
+      <recent name="C:\Users\Ram\PycharmProjects\customer_tracking_app\tracking\static\mdb\css" />
     </key>
   </component>
   <component name="RunManager" selected="Django server.customer_tracking_app">
@@ -164,17 +145,7 @@
       <list>
         <serviceView>
           <treeState>
-            <expand>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="PostgreSQL - postgres@10.0.0.170: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="PostgreSQL - postgres@10.0.0.170: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@be02a78" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </treeState>
         </serviceView>
@@ -237,7 +208,12 @@
       <workItem from="1600128722649" duration="62000" />
       <workItem from="1600129737126" duration="16177000" />
       <workItem from="1600394460537" duration="1118000" />
-      <workItem from="1600407109434" duration="4155000" />
+      <workItem from="1600407109434" duration="6159000" />
+      <workItem from="1600759763066" duration="12672000" />
+      <workItem from="1601281737543" duration="4849000" />
+      <workItem from="1601936179505" duration="1026000" />
+      <workItem from="1603091562728" duration="393000" />
+      <workItem from="1603780802688" duration="17998000" />
     </task>
     <servers />
   </component>
@@ -256,26 +232,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="254" height="195" key="DatabaseViewActions_Filter/0.0.1920.1040@0.0.1920.1040" timestamp="1600441292573" />
-    <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1600498821219">
+    <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1603091855942">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1600498821219" />
-    <state width="1877" height="268" key="GridCell.Tab.0.bottom" timestamp="1600441195788">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1603091855942" />
+    <state width="1877" height="268" key="GridCell.Tab.0.bottom" timestamp="1603865268370">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="268" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600441195788" />
-    <state width="1877" height="268" key="GridCell.Tab.0.center" timestamp="1600441195788">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1877" height="268" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1603865268370" />
+    <state width="1877" height="268" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603790208666" />
+    <state width="1877" height="268" key="GridCell.Tab.0.center" timestamp="1603865268370">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="268" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600441195788" />
-    <state width="1877" height="268" key="GridCell.Tab.0.left" timestamp="1600441195788">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1877" height="268" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1603865268370" />
+    <state width="1877" height="268" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603790208666" />
+    <state width="1877" height="268" key="GridCell.Tab.0.left" timestamp="1603865268369">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="268" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600441195788" />
-    <state width="1877" height="268" key="GridCell.Tab.0.right" timestamp="1600441195788">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1877" height="268" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1603865268369" />
+    <state width="1877" height="268" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603790208662" />
+    <state width="1877" height="268" key="GridCell.Tab.0.right" timestamp="1603865268370">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="268" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600441195788" />
+    <state width="1877" height="268" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1603865268370" />
+    <state width="1877" height="268" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603790208666" />
     <state width="221" height="457" key="HiddenNamespacesPopup" timestamp="1600441264942">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -284,14 +264,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="468" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1599485265465" />
-    <state x="715" y="364" key="cloudConfig.PluginsDialog" timestamp="1593467691176">
+    <state x="634" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1603091738396">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="715" y="364" key="cloudConfig.PluginsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593467691176" />
-    <state x="634" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1600407109602">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="634" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600407109602" />
+    <state x="634" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603091738396" />
     <state x="477" y="82" width="1193" height="958" key="find.popup" timestamp="1600224989949">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
