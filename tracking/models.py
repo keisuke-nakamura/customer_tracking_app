@@ -519,6 +519,79 @@ class TRentalFeeDetail(models.Model):
         db_table = u'"public\".\"t_rental_fee_detail"'
 
 
+class UlUnitEquipment(models.Model):
+    int_unit_equipment_id = models.AutoField(primary_key=True)
+    str_unit_equipment = models.CharField(max_length=100)
+    str_meaning = models.CharField(max_length=100, blank=True, null=True)
+    bol_show = models.BooleanField(blank=True, null=True)
+    bol_fixed = models.BooleanField(blank=True, null=True)
+    str_export_1 = models.CharField(max_length=100, blank=True, null=True)
+    str_export_2 = models.CharField(max_length=100, blank=True, null=True)
+    str_export_3 = models.CharField(max_length=100, blank=True, null=True)
+    str_export_4 = models.CharField(max_length=100, blank=True, null=True)
+    str_export_5 = models.CharField(max_length=100, blank=True, null=True)
+    str_export_6 = models.CharField(max_length=100, blank=True, null=True)
+    str_export_7 = models.CharField(max_length=100, blank=True, null=True)
+    str_export_8 = models.CharField(max_length=100, blank=True, null=True)
+    str_export_9 = models.CharField(max_length=100, blank=True, null=True)
+    str_export_10 = models.CharField(max_length=100, blank=True, null=True)
+    str_export_11 = models.CharField(max_length=100, blank=True, null=True)
+    str_export_12 = models.CharField(max_length=100, blank=True, null=True)
+    str_export_13 = models.CharField(max_length=100, blank=True, null=True)
+    str_export_14 = models.CharField(max_length=100, blank=True, null=True)
+    str_export_15 = models.CharField(max_length=100, blank=True, null=True)
+    str_export_16 = models.CharField(max_length=100, blank=True, null=True)
+    str_export_17 = models.CharField(max_length=100, blank=True, null=True)
+    str_export_18 = models.CharField(max_length=100, blank=True, null=True)
+    str_export_19 = models.CharField(max_length=100, blank=True, null=True)
+    str_export_20 = models.CharField(max_length=100, blank=True, null=True)
+    int_order_id = models.IntegerField(blank=True, null=True)
+    bol_default_flg = models.BooleanField(blank=True, null=True)
+    bol_print = models.BooleanField(blank=True, null=True)
+
+    class Meta:
+        managed = False
+        db_table = u'"public\".\"ul_unit_equipment"'
+
+
+class UlUnitEquipmentSelect(models.Model):
+    int_unit_equipment_select_id = models.AutoField(primary_key=True)
+    int_unit_equipment_id = models.IntegerField()
+    int_equipment_id = models.IntegerField()
+    str_equipment = models.CharField(max_length=100, blank=True, null=True)
+    str_meaning = models.CharField(max_length=100, blank=True, null=True)
+    bol_show = models.BooleanField(blank=True, null=True)
+    bol_fixed = models.BooleanField(blank=True, null=True)
+    str_export_1 = models.CharField(max_length=100, blank=True, null=True)
+    str_export_2 = models.CharField(max_length=100, blank=True, null=True)
+    str_export_3 = models.CharField(max_length=100, blank=True, null=True)
+    str_export_4 = models.CharField(max_length=100, blank=True, null=True)
+    str_export_5 = models.CharField(max_length=100, blank=True, null=True)
+    str_export_6 = models.CharField(max_length=100, blank=True, null=True)
+    str_export_7 = models.CharField(max_length=100, blank=True, null=True)
+    str_export_8 = models.CharField(max_length=100, blank=True, null=True)
+    str_export_9 = models.CharField(max_length=100, blank=True, null=True)
+    str_export_10 = models.CharField(max_length=100, blank=True, null=True)
+    str_export_11 = models.CharField(max_length=100, blank=True, null=True)
+    str_export_12 = models.CharField(max_length=100, blank=True, null=True)
+    str_export_13 = models.CharField(max_length=100, blank=True, null=True)
+    str_export_14 = models.CharField(max_length=100, blank=True, null=True)
+    str_export_15 = models.CharField(max_length=100, blank=True, null=True)
+    str_export_16 = models.CharField(max_length=100, blank=True, null=True)
+    str_export_17 = models.CharField(max_length=100, blank=True, null=True)
+    str_export_18 = models.CharField(max_length=100, blank=True, null=True)
+    str_export_19 = models.CharField(max_length=100, blank=True, null=True)
+    str_export_20 = models.CharField(max_length=100, blank=True, null=True)
+    int_order_id = models.IntegerField(blank=True, null=True)
+    bol_default_flg = models.BooleanField(blank=True, null=True)
+    bol_default_simple_flg = models.BooleanField(blank=True, null=True)
+
+    class Meta:
+        managed = False
+        db_table = u'"public\".\"ul_unit_equipment_select"'
+        unique_together = (('int_unit_equipment_id', 'int_equipment_id'),)
+
+
 # tracking_schema
 # ユーザ権限マスタ
 class UlAuthority(models.Model):
@@ -595,3 +668,52 @@ class TempCustomers(models.Model):
 
     dat_created_at = models.DateTimeField('date created')
     dat_updated_at = models.DateTimeField('date updated')
+
+
+class TrackingUnitEquipment(models.Model):
+    int_tracking_potential_customers_id = models.IntegerField()
+    int_equipment_id = models.IntegerField()
+    int_equipment_select = models.IntegerField()
+    str_premise_name = models.CharField(max_length=100, blank=True, null=True)
+    str_premise_address = models.CharField(max_length=100, blank=True, null=True)
+
+
+class CustomerRequirement(models.Model):
+    int_tracking_potential_customers_id = models.IntegerField(null=False, unique=True, blank=True)
+    int_min_rental_fee = models.IntegerField(null=True, blank=True)  # 賃料下限
+    int_max_rental_fee = models.IntegerField(null=True, blank=True)  # 賃料上限
+    bol_construction_iron = models.BooleanField(default=False, null=True, blank=True)  # 構造 鉄筋系
+    bol_construction_steel = models.BooleanField(default=False, null=True, blank=True)  # 構造 鉄骨系
+    bol_construction_wooden = models.BooleanField(default=False, null=True, blank=True)  # 構造 木造
+    bol_construction_other = models.BooleanField(default=False, null=True, blank=True)  # 構造 その他
+    bol_layout_one_room = models.BooleanField(default=False, null=True, blank=True)  # 間取 ワンルーム
+    bol_layout_1k = models.BooleanField(default=False, null=True, blank=True)  # 間取 1k
+    bol_layout_1dk = models.BooleanField(default=False, null=True, blank=True)  # 間取 1dk
+    bol_layout_1ldk = models.BooleanField(default=False, null=True, blank=True)  # 間取 1ldk
+    bol_layout_2k = models.BooleanField(default=False, null=True, blank=True)  # 間取 2k
+    bol_layout_2dk = models.BooleanField(default=False, null=True, blank=True)  # 間取 2dk
+    bol_layout_2ldk = models.BooleanField(default=False, null=True, blank=True)  # 間取 2ldk
+    bol_layout_3k = models.BooleanField(default=False, null=True, blank=True)  # 間取 3k
+    bol_layout_3dk = models.BooleanField(default=False, null=True, blank=True)  # 間取 3dk
+    bol_layout_3ldk = models.BooleanField(default=False, null=True, blank=True)  # 間取 3ldk
+    bol_layout_4k = models.BooleanField(default=False, null=True, blank=True)  # 間取 4k
+    bol_layout_4dk = models.BooleanField(default=False, null=True, blank=True)  # 間取 4dk
+    bol_layout_4ldk = models.BooleanField(default=False, null=True, blank=True)  # 間取 4ldk以上
+    int_line1 = models.IntegerField(null=True, blank=True)  # 路線ID1
+    int_station1 = models.IntegerField(null=True, blank=True)  # 駅ID1
+    int_line2 = models.IntegerField(null=True, blank=True)  # 路線ID2
+    int_station2 = models.IntegerField(null=True, blank=True)  # 駅ID2
+    int_line3 = models.IntegerField(null=True, blank=True)  # 路線ID3
+    int_station3 = models.IntegerField(null=True, blank=True)  # 駅ID3
+    bol_area1 = models.BooleanField(default=False, null=True, blank=True)  # エリア1
+    bol_area2 = models.BooleanField(default=False, null=True, blank=True)  # エリア2
+    bol_area3 = models.BooleanField(default=False, null=True, blank=True)  # エリア3
+    bol_area4 = models.BooleanField(default=False, null=True, blank=True)  # エリア4
+    int_school_area1 = models.IntegerField(null=True, blank=True)  # 学区1
+    int_school_area2 = models.IntegerField(null=True, blank=True)  # 学区2
+    int_school_area3 = models.IntegerField(null=True, blank=True)  # 学区3
+    int_school_area4 = models.IntegerField(null=True, blank=True)  # 学区4
+    bol_other_conditions_pet = models.BooleanField(default=False, null=True, blank=True)
+    bol_other_conditions_city_gas = models.BooleanField(default=False, null=True, blank=True)
+    bol_other_conditions_second_floor = models.BooleanField(default=False, null=True, blank=True)
+    bol_other_conditions_bath_toilet = models.BooleanField(default=False, null=True, blank=True)

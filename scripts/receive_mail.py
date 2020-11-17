@@ -1,14 +1,15 @@
 #  受信箱に送信されてきたメールを取得
 #  物件に関する問い合わせメールの場合見込客として登録する
 import datetime
-
 from django.http import Http404
 
 from tracking.models import TempCustomers, TUnit, TPremise, PotentialCustomers
 import logging
 import poplib
+import imaplib
 import re
 import email
+import ssl
 import pytz
 from email.header import decode_header, make_header
 
@@ -16,7 +17,7 @@ logging.basicConfig(level=logging.DEBUG)
 
 # settings(別ファイル保管するか未定)
 host = 'serita.wp-x.jp'
-port = '110'
+# port = '110'
 user = 'yoshizawa@serita-f.jp'
 password = 'serita0004'
 suumo_subject = '[リクルートＪＤＳ]反響お知らせメール'
@@ -31,8 +32,9 @@ def run():
         connection = connect()
         mails = receive_mail(connection)
         datas = classification_mail(mails)
-    #     import_mail(datas)
-    #     connection.quit()
+        # import_mail(datas)
+        connection.close()
+        connection.logout()
     except poplib.error_proto as POP3_Exception:
         print('POP3_EXCEPTION : ')
         print(POP3_Exception)
@@ -43,43 +45,56 @@ def run():
 
 # メールサーバ接続
 def connect():
-    cli = poplib.POP3(host)
-    cli.user(user)
-    cli.pass_(password)
+    context = ssl.create_default_context()
+    cli = imaplib.IMAP4_SSL(host, 993, ssl_context=context)
+    # cli = imaplib.IMAP4(host, 143)
+    cli.login(user, password)
+    # cli.select('INBOX')
+
+    # cli.select('INBOX.&Tgtm+DBN-')
+    # cli.select('INBOX.&kAFP4W4IMH8-')  #???
+    cli.select('INBOX.&j,dg0TDhMPww6w-')  # 迷惑メール？
+    # cli.select('INBOX.&MFQwf3ux-')  # ？？？
+    for i in cli.list()[1]:
+        l = i.decode().split(' "." ')
+        print(l[0] + " = " + l[1])
 
     return cli
 
 
 # メール取得
 def receive_mail(con):
-    num_mails = len(con.list()[1])
     mail_list = dict()
-    print(num_mails)
-    for i in range(num_mails):
-        msg_bytes = b""
-        for line in con.retr(i + 1)[1]:
-            msg_bytes += line + b"\n"
+    type, datas = con.search(None, "ALL")
 
-        mail_list[i] = email.message_from_bytes(msg_bytes)
+    for i, num in enumerate(datas[0].split()):
+        typ, data = con.fetch(num, '(RFC822)')
+        mail_list[i] = email.message_from_bytes(data[0][1])
 
+    print(len(mail_list))
     return mail_list
 
 
 # メール仕訳
 def classification_mail(mails):
     mail_lists = []
-    for i in mails:
+    for i, mail in enumerate(mails):
         subject = str(make_header(decode_header(mails[i]['Subject'])))
         # ポータル・件名ごとに分類　ループで処理しようかと思ったが、今後多様化するかもしれないのでべた書きにする
         if suumo_subject in subject:  # SUUMO 物件問い合わせ
+            print('suumo')
             mail_lists.insert(i, parse_suumo_mail(mails[i]))
         elif suumo_tour_subject in subject:  # SUUMO 内見依頼
+            print('suumo tour')
             mail_lists.insert(i, parse_suumo_mail(mails[i]))
         elif homes_subject in subject:  # HOME'S 物件問い合わせ
+            print('homes')
             mail_lists.insert(i, parse_homes_mail(mails[i]))
         elif mypage_subject in subject:  # 自社ホームページ 物件問い合わせ
+            print('hp')
             mail_lists.insert(i, parse_my_page_mail(mails[i]))
         else:
+            print(subject)
             print('not much')
 
     return mail_lists
@@ -99,6 +114,7 @@ def parse_suumo_mail(mail):
 
     mail_data['inquiry_date'] = payload.split('お問合せ日時：')[-1].split('\n')[0]  # 問い合わせ日時
     mail_data['unit_id'] = payload.split('貴社物件コード：')[-1].split('\n')[0]  # 部屋ID
+
     # mail_data['unit_type'] = payload.split('物件種別：')[-1].split('\n')[0]  #
     # mail_data['premise_name'] = payload.split('物件名：')[-1].split('\n')[0]  #
     # mail_data['premise_station'] = payload.split('最寄り駅：')[-1].split('\n')[0]  #
@@ -147,6 +163,8 @@ def parse_homes_mail(mail):
     mail_data['user_contact'] = ''
     mail_data['user_inquiry_detail'] = payload.split('お問合せ内容：')[-1].split('\n')[0]  # 問い合わせ内容
 
+    print('mail_data')
+    print(mail_data)
     return mail_data
 
 
@@ -191,8 +209,10 @@ def parse_my_page_mail(mail):
 
 
 # メール登録
-def import_mail(mail_datas):
-    for datas in mail_datas:
+def import_mail(mail_data):
+    print('import_mail')
+
+    for datas in mail_data:
         if datas['unit_id'] is None:  # unitの指定が無いケース(未定)
             print('unit_id is None')
         else:  # unitの指定有　テーブルに登録
@@ -211,7 +231,7 @@ def import_mail(mail_datas):
                     dat_updated_at=datetime.datetime.now(pytz.timezone('Asia/Tokyo')),
                 )
                 tmp.save()
-                welcome_mail(datas['unit_id'])
+                # welcome_mail(data['unit_id'])
 
             except Exception as e:
                 print(e)
