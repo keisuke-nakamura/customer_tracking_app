@@ -1,7 +1,8 @@
 {% extends "default.html" %}
 
 {% block howtouse %}
-    <a href="{% url 'unassigned_detail_tour' potential_customer.id %}" title="" class="launch-btn"><i class="ti-view-list-alt red-text"></i> <span>HowToUse</span></a>
+    <a href="{% url 'unassigned_detail_tour' potential_customer_id %}" title="" class="launch-btn"><i
+            class="ti-view-list-alt red-text"></i> <span>HowToUse</span></a>
 {% endblock %}
 
 {% block body %}
@@ -26,7 +27,8 @@
                             <div class="widget-title">
                                 <h3>顧客情報</h3>
                                 <p> フォームテスト</p>
-                                <a class="options dropdown-button waves-effect" href="#" title="" data-activates='dropdown'><i class="ti-more-alt"></i></a>
+                                <a class="options dropdown-button waves-effect" href="#" title=""
+                                   data-activates='dropdown'><i class="ti-more-alt"></i></a>
                                 <ul id='dropdown' class='dropdown-content'>
                                     <li><a class="rld" href="#!" title="">Reload</a></li>
                                     <li><a class="fl-scr" href="#!" title="">Full Screen</a></li>
@@ -36,23 +38,20 @@
                             <form class="col s12">
                                 <div class="row">
                                     <div class="input-field col s12">
-                                        <input placeholder="名前" id="name" type="text" class="validate" value="{{ potential_customer.str_name }}">
-                                        <label for="name">First Name</label>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="input-field col s6">
-                                        <input placeholder="生年月日" id="birthday" type="text" class="validate" >
-                                        <label for="birthday">birthday</label>
-                                    </div>
-                                    <div class="input-field col s6">
-                                        <input placeholder="性別" id="gender" type="text" class="validate">
-                                        <label for="gender">gender</label>
+                                        {{ customer_detail_form.str_name }}
+                                        <label for="str_name">お名前</label>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="input-field col s12">
-                                        <input placeholder="希望物件" id="premise" type="text" class="validate" value="{{ potential_customer.int_information_premise.str_name }}">
+                                        {{ customer_detail_form.str_email }}
+                                        <label for="str_email">メールアドレス</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input placeholder="希望物件" id="premise" type="text" class="validate"
+                                               value="{{ potential_customer.int_information_premise.str_name }}">
                                         <label for="premise">premise</label>
                                     </div>
                                 </div>
@@ -69,7 +68,8 @@
                             <div class="widget-title">
                                 <h3>連絡先</h3>
                                 <p> アイコン付フォームテスト</p>
-                                <a class="options dropdown-button waves-effect" href="#" title="" data-activates='dropdown3'><i class="ti-more-alt"></i></a>
+                                <a class="options dropdown-button waves-effect" href="#" title=""
+                                   data-activates='dropdown3'><i class="ti-more-alt"></i></a>
                                 <ul id='dropdown3' class='dropdown-content'>
                                     <li><a class="rld" href="#!" title="">Reload</a></li>
                                     <li><a class="fl-scr" href="#!" title="">Full Screen</a></li>
@@ -99,7 +99,8 @@
                             <div class="widget-title">
                                 <h3>媒体等</h3>
                                 <p>セレクトボックステスト</p>
-                                <a class="options dropdown-button waves-effect" href="#" title="" data-activates='dropdown4'><i class="ti-more-alt"></i></a>
+                                <a class="options dropdown-button waves-effect" href="#" title=""
+                                   data-activates='dropdown4'><i class="ti-more-alt"></i></a>
                                 <ul id='dropdown4' class='dropdown-content'>
                                     <li><a class="rld" href="#!" title="">Reload</a></li>
                                     <li><a class="fl-scr" href="#!" title="">Full Screen</a></li>
@@ -141,10 +142,11 @@
                             <div class="widget-title">
                                 <h3>メール送信設定</h3>
                                 <p>ミックスフォームテスト</p>
-                                <a class="options dropdown-button waves-effect" href="#" title="" data-activates='dropdown4'><i class="ti-more-alt"></i></a>
+                                <a class="options dropdown-button waves-effect" href="#" title=""
+                                   data-activates='dropdown4'><i class="ti-more-alt"></i></a>
                                 <div class="input-field col s12">
                                     <p>
-                                        <input type="checkbox" id="indeterminate-checkbox" />
+                                        <input type="checkbox" id="indeterminate-checkbox"/>
                                         <label for="indeterminate-checkbox">メールを送信する</label>
                                     </p>
                                 </div>
@@ -177,7 +179,8 @@
                             <div class="widget-title">
                                 <h3>メモ</h3>
                                 <p>自由入力フォームテスト</p>
-                                <a class="options dropdown-button waves-effect" href="#" title="" data-activates='dropdown6'><i class="ti-more-alt"></i></a>
+                                <a class="options dropdown-button waves-effect" href="#" title=""
+                                   data-activates='dropdown6'><i class="ti-more-alt"></i></a>
                                 <ul id='dropdown6' class='dropdown-content'>
                                     <li><a class="rld" href="#!" title="">Reload</a></li>
                                     <li><a class="fl-scr" href="#!" title="">Full Screen</a></li>
@@ -196,42 +199,52 @@
                         </div><!-- Widget -->
                     </div>
 
-                    <div class="col s6">
-                        <div class="widget z-depth-1">
-                            <div class="loader"></div>
-                            <div class="widget-title">
-                                <h3>担当者</h3>
-                                <p>セレクトボックステスト</p>
-                                <a class="options dropdown-button waves-effect" href="#" title="" data-activates='dropdown4'><i class="ti-more-alt"></i></a>
-                                <ul id='dropdown4' class='dropdown-content'>
-                                    <li><a class="rld" href="#!" title="">Reload</a></li>
-                                    <li><a class="fl-scr" href="#!" title="">Full Screen</a></li>
-                                    <li><a class="rmv" href="#!" title="">Remove</a></li>
-                                </ul>
-                            </div>
-                            <form class="col s12">
-                                <div class="row">
-
-                                    <div class="input-field col s12">
-                                        <select>
-                                            <option value="" disabled selected>担当者</option>
-                                            <option value="1">担当 太郎</option>
-                                            <option value="2">担当 二郎</option>
-                                            <option value="3">担当 站椿</option>
-                                        </select>
-                                        <label>Charge</label>
-                                    </div>
-
-                                </div>
-                            </form>
-                        </div><!-- Widget -->
-                    </div>
+                    {#                    <div class="col s6">#}
+                    {#                        <div class="widget z-depth-1">#}
+                    {#                            <div class="loader"></div>#}
+                    {#                            <div class="widget-title">#}
+                    {#                                <h3>担当者</h3>#}
+                    {#                                <p>セレクトボックステスト</p>#}
+                    {#                                <a class="options dropdown-button waves-effect" href="#" title="" data-activates='dropdown4'><i class="ti-more-alt"></i></a>#}
+                    {#                                <ul id='dropdown4' class='dropdown-content'>#}
+                    {#                                    <li><a class="rld" href="#!" title="">Reload</a></li>#}
+                    {#                                    <li><a class="fl-scr" href="#!" title="">Full Screen</a></li>#}
+                    {#                                    <li><a class="rmv" href="#!" title="">Remove</a></li>#}
+                    {#                                </ul>#}
+                    {#                            </div>#}
+                    {#                            <form class="col s12">#}
+                    {#                                <div class="row">#}
+                    {##}
+                    {#                                    <div class="input-field col s12">#}
+                    {#                                        <select>#}
+                    {#                                            <option value="" disabled selected>担当者</option>#}
+                    {#                                            <option value="1">担当 太郎</option>#}
+                    {#                                            <option value="2">担当 二郎</option>#}
+                    {#                                            <option value="3">担当 站椿</option>#}
+                    {#                                        </select>#}
+                    {#                                        <label>Charge</label>#}
+                    {#                                    </div>#}
+                    {##}
+                    {#                                </div>#}
+                    {#                            </form>#}
+                    {#                        </div><!-- Widget -->#}
+                    {#                    </div>#}
                 </div>
             </div>
             <div class="button-set">
-                <button type="button" class="modal-action modal-close waves-effect waves-light btn-flat pink lighten-2 white-text">キャンセル</button>
-{#                <button type="button" class="modal-action modal-close waves-effect waves-light btn-flat red white-text delete-contact">追客停止</button>#}
-                <button type="button" class="modal-action modal-close waves-effect waves-light btn-flat green lighten-2 white-text save-contact">保存</button>
+                <button type="button"
+                        class="modal-action modal-close waves-effect waves-light btn-flat pink lighten-2 white-text">
+                    キャンセル
+                </button>
+                {#                <button type="button" class="modal-action modal-close waves-effect waves-light btn-flat red white-text delete-contact">追客停止</button>#}
+                <button type="button"
+                        class="modal-action modal-close waves-effect waves-light btn-flat red white-text delete-contact">
+                    追客開始
+                </button>
+                <button type="button"
+                        class="modal-action modal-close waves-effect waves-light btn-flat green lighten-2 white-text save-contact">
+                    保存
+                </button>
                 {#                <button type="button" class="modal-action modal-close waves-effect waves-light btn-flat green lighten-2 white-text add-new-contact">Add</button>#}
             </div>
         </div>

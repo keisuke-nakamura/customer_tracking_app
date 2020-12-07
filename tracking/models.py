@@ -472,6 +472,35 @@ class TlPrefecture(models.Model):
         db_table = 'tl_prefecture'
 
 
+class TlMainStructure(models.Model):
+    int_main_structure_id = models.AutoField(primary_key=True)
+    str_main_structure = models.CharField(max_length=100)
+    str_export_1 = models.CharField(max_length=100, blank=True, null=True)
+    str_export_2 = models.CharField(max_length=100, blank=True, null=True)
+    str_export_3 = models.CharField(max_length=100, blank=True, null=True)
+    str_export_4 = models.CharField(max_length=100, blank=True, null=True)
+    str_export_5 = models.CharField(max_length=100, blank=True, null=True)
+    str_export_6 = models.CharField(max_length=100, blank=True, null=True)
+    str_export_7 = models.CharField(max_length=100, blank=True, null=True)
+    str_export_8 = models.CharField(max_length=100, blank=True, null=True)
+    str_export_9 = models.CharField(max_length=100, blank=True, null=True)
+    str_export_10 = models.CharField(max_length=100, blank=True, null=True)
+    str_export_11 = models.CharField(max_length=100, blank=True, null=True)
+    str_export_12 = models.CharField(max_length=100, blank=True, null=True)
+    str_export_13 = models.CharField(max_length=100, blank=True, null=True)
+    str_export_14 = models.CharField(max_length=100, blank=True, null=True)
+    str_export_15 = models.CharField(max_length=100, blank=True, null=True)
+    str_export_16 = models.CharField(max_length=100, blank=True, null=True)
+    str_export_17 = models.CharField(max_length=100, blank=True, null=True)
+    str_export_18 = models.CharField(max_length=100, blank=True, null=True)
+    str_export_19 = models.CharField(max_length=100, blank=True, null=True)
+    str_export_20 = models.CharField(max_length=100, blank=True, null=True)
+
+    class Meta:
+        managed = False
+        db_table = u'"public\".\"tl_main_structure"'
+
+
 class TlYubin(models.Model):
     int_yubin_id = models.AutoField(primary_key=True)
     int_public_code = models.IntegerField()
@@ -717,3 +746,47 @@ class CustomerRequirement(models.Model):
     bol_other_conditions_city_gas = models.BooleanField(default=False, null=True, blank=True)
     bol_other_conditions_second_floor = models.BooleanField(default=False, null=True, blank=True)
     bol_other_conditions_bath_toilet = models.BooleanField(default=False, null=True, blank=True)
+
+
+# 構造カテゴリ
+class UlMainStructureCategory(models.Model):
+
+    str_main_structure = models.CharField(max_length=100)
+    int_category = models.IntegerField(null=True, blank=True)
+
+
+# 間取カテゴリ
+class UlLayoutCategory(models.Model):
+    str_layout = models.CharField(max_length=100)
+    int_category = models.IntegerField(null=True, blank=True)
+
+
+# 沿線
+class TlLine(models.Model):
+    int_line_id = models.IntegerField(blank=True)
+    str_line = models.CharField(max_length=100)
+
+
+# 駅
+class TlStation(models.Model):
+    int_line_id = models.IntegerField(blank=True)
+    int_station_id = models.IntegerField(blank=True)
+    str_station = models.CharField(max_length=100)
+
+
+# エリア
+class TlArea(models.Model):
+    int_area_id = models.IntegerField(blank=True)
+    str_area = models.CharField(max_length=100)
+
+
+# 学区
+class TlSchoolArea(models.Model):
+    int_school_area_id = models.IntegerField(blank=True)
+    str_school_area = models.CharField(max_length=100)
+
+
+# その他
+class TlOtherCondition(models.Model):
+    int_other_condition_id = models.IntegerField(blank=True)
+    str_other_condition = models.CharField(max_length=100)

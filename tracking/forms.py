@@ -1,56 +1,63 @@
 from django import forms
 from django.forms import ModelForm
-from .models import CustomerRequirement
+from .models import UlMainStructureCategory, UlLayoutCategory, TlLine, TlStation, TlArea, TlSchoolArea, TlOtherCondition
 
 
 class CustomerRequirementForm(forms.Form):
-    # int_tracking_potential_customers_id = forms.IntegerField(required=False)
+
     int_min_rental_fee = forms.CharField(widget=forms.TextInput(attrs={'placeholder': '', 'class': 'validate'}),
                                          required=False)
     int_max_rental_fee = forms.CharField(widget=forms.TextInput(attrs={'placeholder': '', 'class': 'validate'}),
                                          required=False)
     # 構造
-
-    construction_choices = [("", "指定なし"), ("test1", "鉄筋系"), ("test2", "鉄骨系"), ("test3", "木造"), ("test4", "その他")]
+    construction_choices = list(UlMainStructureCategory.objects.values_list('pk', 'str_main_structure').order_by('pk').all())
     construction = forms.MultipleChoiceField(widget=forms.SelectMultiple(),
-                                             choices=construction_choices, required = False)
+                                             choices=construction_choices, required=False)
 
-    # class Meta:
-    #     model = CustomerRequirement
-    #     fields = '__all__'
+    # 間取
+    layout_choices = list(UlLayoutCategory.objects.values_list('pk', 'str_layout').order_by('pk').all())
+    layout = forms.MultipleChoiceField(widget=forms.SelectMultiple(), choices=layout_choices, required=False)
 
-    # bol_construction_iron = forms.BooleanField(required=False)
-    # bol_construction_steel = forms.BooleanField(required=False)
-    # bol_construction_wooden = forms.BooleanField(required=False)
-    # bol_construction_other = forms.BooleanField(required=False)
-    # bol_layout_one_room = forms.BooleanField(required=False)
-    # bol_layout_1k = forms.BooleanField(required=False)
-    # bol_layout_1dk = forms.BooleanField(required=False)
-    # bol_layout_1ldk = forms.BooleanField(required=False)
-    # bol_layout_2k = forms.BooleanField(required=False)
-    # bol_layout_2dk = forms.BooleanField(required=False)
-    # bol_layout_2ldk = forms.BooleanField(required=False)
-    # bol_layout_3k = forms.BooleanField(required=False)
-    # bol_layout_3dk = forms.BooleanField(required=False)
-    # bol_layout_3ldk = forms.BooleanField(required=False)
-    # bol_layout_4k = forms.BooleanField(required=False)
-    # bol_layout_4dk = forms.BooleanField(required=False)
-    # bol_layout_4ldk = forms.BooleanField(required=False)
-    # int_line1 = forms.IntegerField(required=False)
-    # int_station1 = forms.IntegerField(required=False)
-    # int_line2 = forms.IntegerField(required=False)
-    # int_station2 = forms.IntegerField(required=False)
-    # int_line3 = forms.IntegerField(required=False)
-    # int_station3 = forms.IntegerField(required=False)
-    # bol_area1 = forms.BooleanField(required=False)
-    # bol_area2 = forms.BooleanField(required=False)
-    # bol_area3 = forms.BooleanField(required=False)
-    # bol_area4 = forms.BooleanField(required=False)
-    # int_school_area1 = forms.IntegerField(required=False)
-    # int_school_area2 = forms.IntegerField(required=False)
-    # int_school_area3 = forms.IntegerField(required=False)
-    # int_school_area4 = forms.IntegerField(required=False)
-    # bol_other_conditions_pet = forms.BooleanField(required=False)
-    # bol_other_conditions_city_gas = forms.BooleanField(required=False)
-    # bol_other_conditions_second_floor = forms.BooleanField(required=False)
-    # bol_other_conditions_bath_toilet = forms.BooleanField(required=False)
+    # 沿線1
+    line_choices1 = list(TlLine.objects.values_list('int_line_id', 'str_line').order_by('int_line_id').all())
+    int_line1 = forms.ChoiceField(widget=forms.Select(), choices=line_choices1, required=False)
+
+    # 駅1
+    station_choices1 = list(TlStation.objects.values_list('int_station_id', 'str_station').order_by('int_station_id').all())
+    int_station1 = forms.ChoiceField(widget=forms.Select(), choices=station_choices1, required=False)
+
+    # 沿線2
+    line_choices2 = list(TlLine.objects.values_list('int_line_id', 'str_line').order_by('int_line_id').all())
+    int_line2 = forms.ChoiceField(widget=forms.Select(), choices=line_choices2, required=False)
+
+    # 駅2
+    station_choices2 = list(TlStation.objects.values_list('int_station_id', 'str_station').order_by('int_station_id').all())
+    int_station2 = forms.ChoiceField(widget=forms.Select(), choices=station_choices2, required=False)
+
+    # 沿線3
+    line_choices3 = list(TlLine.objects.values_list('int_line_id', 'str_line').order_by('int_line_id').all())
+    int_line3 = forms.ChoiceField(widget=forms.Select(), choices=line_choices3, required=False)
+
+    # 駅3
+    station_choices3 = list(TlStation.objects.values_list('int_station_id', 'str_station').order_by('int_station_id').all())
+    int_station3 = forms.ChoiceField(widget=forms.Select(), choices=station_choices3, required=False)
+
+    # エリア
+    area_choices = list(TlArea.objects.values_list('int_area_id', 'str_area').order_by('int_area_id').all())
+    area = forms.MultipleChoiceField(widget=forms.SelectMultiple(), choices=area_choices, required=False)
+
+    # 学区
+    school_area_choices = list(TlSchoolArea.objects.values_list('int_school_area_id', 'str_school_area').order_by('int_school_area_id').all())
+    school_area = forms.MultipleChoiceField(widget=forms.SelectMultiple(), choices=school_area_choices, required=False)
+
+    # その他条件
+    other_condition_choices = list(TlOtherCondition.objects.values_list('int_other_condition_id', 'str_other_condition').order_by('int_other_condition_id').all())
+    other_condition = forms.MultipleChoiceField(widget=forms.SelectMultiple(), choices=other_condition_choices, required=False)
+
+
+class CustomerDetailForm(forms.Form):
+
+    str_name = forms.CharField(widget=forms.TextInput(attrs={'placeholder': '名前', 'class': 'validate'}),
+                                         required=False)
+    str_email = forms.CharField(widget=forms.TextInput(attrs={'placeholder': 'メールアドレス', 'class': 'validate'}),
+                                         required=False)

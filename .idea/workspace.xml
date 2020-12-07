@@ -2,16 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6dd0b3b2-4a6f-4a3b-9282-1b24fb886ef3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tracking/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tracking/migrations/0005_customerrequirement_trackingunitequipment_ulunitequipment_ulunitequipmentselect.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tracking/migrations/0006_auto_20201117_1438.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tracking/migrations/0007_auto_20201117_1440.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tracking/migrations/0008_auto_20201117_1713.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tracking/migrations/0009_auto_20201117_1832.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tracking/migrations/0010_tlmainstructure.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tracking/migrations/0011_auto_20201118_1554.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tracking/migrations/0012_ulmainstructurecategory.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tracking/migrations/0013_auto_20201118_1618.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tracking/migrations/0014_tlline_tlstation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tracking/migrations/0015_tlarea_tlothercondition_tlschoolarea.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/receive_mail.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/receive_mail.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tracking/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/tracking/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tracking/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/tracking/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tracking/templates/customer_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/tracking/templates/customer_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tracking/templates/customer_detail_tour.html" beforeDir="false" afterPath="$PROJECT_DIR$/tracking/templates/customer_detail_tour.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tracking/templates/unassigned_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/tracking/templates/unassigned_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tracking/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/tracking/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -220,7 +223,12 @@
       <workItem from="1601936179505" duration="1026000" />
       <workItem from="1603091562728" duration="393000" />
       <workItem from="1603780802688" duration="31642000" />
-      <workItem from="1605251099121" duration="57282000" />
+      <workItem from="1605251099121" duration="57932000" />
+      <workItem from="1605663310438" duration="8009000" />
+      <workItem from="1605750031986" duration="3920000" />
+      <workItem from="1606176290322" duration="14136000" />
+      <workItem from="1606264763025" duration="2791000" />
+      <workItem from="1606287312221" duration="7521000" />
     </task>
     <servers />
   </component>
@@ -243,26 +251,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1604308686937" />
-    <state width="1877" height="404" key="GridCell.Tab.0.bottom" timestamp="1605611416043">
+    <state width="1877" height="284" key="GridCell.Tab.0.bottom" timestamp="1606378120336">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="268" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1603865268370" />
-    <state width="1877" height="404" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605611416043" />
-    <state width="1877" height="404" key="GridCell.Tab.0.center" timestamp="1605611416043">
+    <state width="1877" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606378120336" />
+    <state width="1877" height="284" key="GridCell.Tab.0.center" timestamp="1606378120336">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="268" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1603865268370" />
-    <state width="1877" height="404" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605611416043" />
-    <state width="1877" height="404" key="GridCell.Tab.0.left" timestamp="1605611416043">
+    <state width="1877" height="284" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606378120336" />
+    <state width="1877" height="284" key="GridCell.Tab.0.left" timestamp="1606378120336">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="268" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1603865268369" />
-    <state width="1877" height="404" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605611416043" />
-    <state width="1877" height="404" key="GridCell.Tab.0.right" timestamp="1605611416043">
+    <state width="1877" height="284" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606378120336" />
+    <state width="1877" height="284" key="GridCell.Tab.0.right" timestamp="1606378120336">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="268" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1603865268370" />
-    <state width="1877" height="404" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605611416043" />
+    <state width="1877" height="284" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606378120336" />
     <state width="221" height="457" key="HiddenNamespacesPopup" timestamp="1600441264942">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -271,10 +279,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="468" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1604311315535" />
-    <state x="634" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1605252133629">
+    <state x="634" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1606287312264">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="634" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605252133629" />
+    <state x="634" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606287312264" />
     <state x="477" y="82" width="1193" height="958" key="find.popup" timestamp="1600224989949">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

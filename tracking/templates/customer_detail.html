@@ -45,13 +45,9 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="input-field col s6">
-                                        <input placeholder="生年月日" id="birthday" type="text" class="validate">
-                                        <label for="birthday">birthday</label>
-                                    </div>
-                                    <div class="input-field col s6">
-                                        <input placeholder="性別" id="gender" type="text" class="validate">
-                                        <label for="gender">gender</label>
+                                    <div class="input-field col s12">
+                                        <input placeholder="メールアドレス" id="email" type="text" class="validate">
+                                        <label for="birthday">mail_address</label>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -195,133 +191,56 @@
                         <form action="" method="POST">
                             {% csrf_token %}
                             <div class="input-field col s2">
-{#                                <input placeholder="" id="min_rental_fee" name="min_rental_fee" value="{{ requirements.int_min_rental_fee }}" type="text" class="validate">#}
                                 {{ customer_requirement_form.int_min_rental_fee }}
                                 <label for="min_rental_fee">賃料下限（円）</label>
                             </div>
                             <div class="input-field col s2">
-{#                                <input placeholder="" id="max_rental_fee" name="max_rental_fee" value="{{ requirements.int_max_rental_fee }}" type="text" class="validate">#}
                                 {{ customer_requirement_form.int_max_rental_fee }}
                                 <label for="max_rental_fee">賃料上限（円）</label>
                             </div>
                             <div class="input-field col s12">
                                 {{ customer_requirement_form.construction }}
-{#                                <select multiple name="construction" id="construction">#}
-{#                                    <option value="" disabled selected>構造</option>#}
-{#                                    <option [ngValue]="true">鉄筋系</option>#}
-{#                                    <option [ngValue]="true">鉄骨系</option>#}
-{#                                    <option [ngValue]="true">木造</option>#}
-{#                                    <option [ngValue]="true">その他</option>#}
-{#                                </select>#}
+
                                 <label>物件構造</label>
                             </div>
                             <div class="input-field col s12">
-                                <select multiple>
-                                    <option value="" disabled selected>間取り</option>
-                                    <option value="1">ワンルーム</option>
-                                    <option value="2">1K</option>
-                                    <option value="3">1DK</option>
-                                    <option value="4">1LDK</option>
-                                    <option value="5">2K</option>
-                                    <option value="6">2DK</option>
-                                    <option value="7">2LDK</option>
-                                    <option value="8">3K</option>
-                                    <option value="9">3DK</option>
-                                    <option value="10">3LDK</option>
-                                    <option value="11">4K</option>
-                                    <option value="12">4DK</option>
-                                    <option value="13">4LDK以上</option>
-                                </select>
+                                {{ customer_requirement_form.layout }}
                                 <label>間取り条件</label>
                             </div>
                             <div class="input-field col s6">
-                                <select multiple>
-                                    <option value="" disabled selected>指定なし</option>
-                                    <option value="1">A線</option>
-                                    <option value="2">B線</option>
-                                    <option value="3">C線</option>
-                                    <option value="4">D線</option>
-                                </select>
+                                {{ customer_requirement_form.int_line1 }}
                                 <label>沿線1</label>
                             </div>
                             <div class="input-field col s6">
-                                <select>
-                                    <option value="" disabled selected>指定なし</option>
-                                    <option value="1">A駅</option>
-                                    <option value="2">B駅</option>
-                                    <option value="3">C駅</option>
-                                    <option value="4">D駅</option>
-                                </select>
+                                {{ customer_requirement_form.int_station1 }}
                                 <label>駅1</label>
                             </div>
                             <div class="input-field col s6">
-                                <select multiple>
-                                    <option value="" disabled selected>指定なし</option>
-                                    <option value="1">A線</option>
-                                    <option value="2">B線</option>
-                                    <option value="3">C線</option>
-                                    <option value="4">D線</option>
-                                </select>
+                                {{ customer_requirement_form.int_line2 }}
                                 <label>沿線2</label>
                             </div>
                             <div class="input-field col s6">
-                                <select>
-                                    <option value="" disabled selected>指定なし</option>
-                                    <option value="1">A駅</option>
-                                    <option value="2">B駅</option>
-                                    <option value="3">C駅</option>
-                                    <option value="4">D駅</option>
-                                </select>
+                                {{ customer_requirement_form.int_station2 }}
                                 <label>駅2</label>
                             </div>
                             <div class="input-field col s6">
-                                <select multiple>
-                                    <option value="" disabled selected>指定なし</option>
-                                    <option value="1">A線</option>
-                                    <option value="2">B線</option>
-                                    <option value="3">C線</option>
-                                    <option value="4">D線</option>
-                                </select>
+                                {{ customer_requirement_form.int_line3 }}
                                 <label>沿線3</label>
                             </div>
                             <div class="input-field col s6">
-                                <select>
-                                    <option value="" disabled selected>指定なし</option>
-                                    <option value="1">A駅</option>
-                                    <option value="2">B駅</option>
-                                    <option value="3">C駅</option>
-                                    <option value="4">D駅</option>
-                                </select>
+                                {{ customer_requirement_form.int_station3 }}
                                 <label>駅3</label>
                             </div>
                             <div class="input-field col s12">
-                                <select multiple>
-                                    <option value="" disabled selected>指定なし</option>
-                                    <option value="1">飯山・長野</option>
-                                    <option value="2">上田・佐久</option>
-                                    <option value="3">大町・松本・木曽</option>
-                                    <option value="4">諏訪・伊那・飯田</option>
-                                </select>
+                                {{ customer_requirement_form.area }}
                                 <label>エリア</label>
                             </div>
                             <div class="input-field col s12">
-                                <select multiple>
-                                    <option value="" disabled selected>指定なし</option>
-                                    <option value="1">学区１</option>
-                                    <option value="2">学区２</option>
-                                    <option value="3">学区３</option>
-                                    <option value="4">学区４</option>
-                                </select>
+                                {{ customer_requirement_form.school_area }}
                                 <label>学区</label>
                             </div>
                             <div class="input-field col s12">
-                                <select multiple>
-                                    <option value="" disabled selected>指定なし</option>
-                                    <option value="1">ペット可</option>
-                                    <option value="2">都市ガス</option>
-                                    <option value="3">2階以上</option>
-                                    <option value="4">バストイレ別</option>
-                                </select>
+                                {{ customer_requirement_form.other_condition }}
                                 <label>こだわり条件</label>
                             </div>
                             <div class="button-set">
@@ -440,138 +359,6 @@
                             <label>駅徒歩分</label>
                         </div>
 
-                    </div>
-                </div>
-
-                <div class="col s12">
-                    <div class="widget z-depth-1">
-                        <div class="loader"></div>
-                        <div class="widget-title">
-                            <h3>こだわり条件</h3>
-                            <p>詳細条件入力欄</p>
-                            <a class="options dropdown-button waves-effect" href="#" title=""
-                               data-activates='dropdown6'><i class="ti-more-alt"></i></a>
-                            <ul id='dropdown6' class='dropdown-content'>
-                                <li><a class="rld" href="#!" title="">Reload</a></li>
-                                <li><a class="fl-scr" href="#!" title="">Full Screen</a></li>
-                                <li><a class="rmv" href="#!" title="">Remove</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="input-field col s12">
-                            <select>
-                                <option value="1" selected="selected">指定なし</option>
-                                <option value="2">1階</option>
-                                <option value="3">2階以上</option>
-                                <option value="4">最上階</option>
-                                <option value="5">南向き</option>
-                                <option value="6">角部屋</option>
-                                {#                                <option value="7">20年以内</option>#}
-                            </select>
-                            <label>階数・位置</label>
-                        </div>
-                        <div class="input-field col s12">
-                            <select multiple>
-                                <option value="" disabled selected>指定なし</option>
-                                <option value="1">ガスコンロ</option>
-                                <option value="2">IHコンロ</option>
-                                <option value="3">電気コンロ</option>
-                                <option value="4">コンロ2口以上</option>
-                                <option value="5">設置済み</option>
-                            </select>
-                            <label>キッチン</label>
-                        </div>
-
-                        <div class="input-field col s12">
-                            <select multiple>
-                                <option value="" disabled selected>指定なし</option>
-                                <option value="1">バス・トイレ別</option>
-                                <option value="2">3点ユニットバス</option>
-                                <option value="3">洗面化粧台</option>
-                                <option value="4">洗面所独立</option>
-                                <option value="5">浴室乾燥機</option>
-                                <option value="6">追炊き機能</option>
-                                <option value="7">共同</option>
-                            </select>
-                            <label>バス</label>
-                        </div>
-
-                        <div class="input-field col s12">
-                            <select multiple>
-                                <option value="" disabled selected>指定なし</option>
-                                <option value="1">シャワートイレ</option>
-                                <option value="2">共同</option>
-                            </select>
-                            <label>トイレ</label>
-                        </div>
-                        <div class="input-field col s12">
-                            <select multiple>
-                                <option value="" disabled selected>指定なし</option>
-                                <option value="1">室内</option>
-                                <option value="2">室外</option>
-                            </select>
-                            <label>洗濯機置場</label>
-                        </div>
-                        <div class="input-field col s12">
-                            <select multiple>
-                                <option value="" disabled selected>指定なし</option>
-                                <option value="1">オートロック</option>
-                                <option value="2">防犯カメラ</option>
-                                <option value="3">TVモニター付きインターホン</option>
-                                <option value="4">管理人常駐</option>
-                                <option value="5">24時間管理</option>
-                                <option value="6">宅配ボックス</option>
-                            </select>
-                            <label>セキュリティ</label>
-                        </div>
-                        <div class="input-field col s12">
-                            <select multiple>
-                                <option value="" disabled selected>指定なし</option>
-                                <option value="1">インターネット接続</option>
-                                <option value="2">インターネット無料</option>
-                                <option value="3">BSアンテナ</option>
-                                <option value="4">CSアンテナ</option>
-                                <option value="5">CATV可</option>
-                            </select>
-                            <label>TV・インターネット</label>
-                        </div>
-                        <div class="input-field col s12">
-                            <select multiple>
-                                <option value="" disabled selected>指定なし</option>
-                                <option value="1">都市ガス</option>
-                            </select>
-                            <label>ガス</label>
-                        </div>
-                        <div class="input-field col s12">
-                            <select multiple>
-                                <option value="" disabled selected>指定なし</option>
-                                <option value="1">エレベーター</option>
-                                <option value="2">ゴミ置き場</option>
-                                <option value="3">コインランドリー</option>
-                                <option value="4">駐車場（敷地内）</option>
-                                <option value="5">駐車場（近隣）</option>
-                                <option value="6">バイク置場</option>
-                                <option value="7">駐輪場</option>
-                                <option value="8">オール電化</option>
-                                <option value="9">ロフト付き</option>
-                                <option value="10">分譲賃貸</option>
-                            </select>
-                            <label>その他設備</label>
-                        </div>
-                        <div class="input-field col s12">
-                            <select multiple>
-                                <option value="" disabled selected>指定なし</option>
-                                <option value="1">学生限定</option>
-                                <option value="2">女性限定</option>
-                                <option value="3">男性限定</option>
-                                <option value="4">2人入居可</option>
-                                <option value="5">ペット相談</option>
-                                <option value="6">楽器相談</option>
-                                <option value="7">事務所可</option>
-                                <option value="8">外国人可</option>
-                            </select>
-                            <label>条件</label>
-                        </div>
                     </div>
                 </div>
             </div>

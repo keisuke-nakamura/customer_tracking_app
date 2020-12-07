@@ -46,14 +46,14 @@ def run():
 # メールサーバ接続
 def connect():
     context = ssl.create_default_context()
-    cli = imaplib.IMAP4_SSL(host, 993, ssl_context=context)
-    # cli = imaplib.IMAP4(host, 143)
+    # cli = imaplib.IMAP4_SSL(host, 993, ssl_context=context)
+    cli = imaplib.IMAP4(host, 143)
     cli.login(user, password)
-    # cli.select('INBOX')
+    cli.select('INBOX')
 
     # cli.select('INBOX.&Tgtm+DBN-')
     # cli.select('INBOX.&kAFP4W4IMH8-')  #???
-    cli.select('INBOX.&j,dg0TDhMPww6w-')  # 迷惑メール？
+    # cli.select('INBOX.&j,dg0TDhMPww6w-')  # 迷惑メール？
     # cli.select('INBOX.&MFQwf3ux-')  # ？？？
     for i in cli.list()[1]:
         l = i.decode().split(' "." ')
